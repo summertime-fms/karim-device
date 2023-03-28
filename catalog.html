@@ -5,9 +5,12 @@
 	     <title>Каталог</title>
 	 </head>
 	 <body>
+        <!-- Шапка сайта -->
         <header class="page-header">
             <nav class="navigation">
-              <img class="logo-device" src="" alt="Логотип device">
+              <a class="page-header-logo" href="index.html">
+                <img class="logo-device" src="" alt="Логотип device">
+              </a>
               <ul class="search-menu-list">
                 <li class="search-menu-item">
                   <input class="search-menu" type="text" placeholder="Поиск по сайту">
@@ -62,7 +65,66 @@
               </ul>
             </nav>
           </header>
+          <!-- Основная структура страницы -->
+          <main class="main-inner">
+            <header class="inner-header">
+                <h1 class="inner-header-title">Моноподы для селфи</h1>
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link">Каталог товаров</a>
+                    </li>
+                    <li class="breadcrumbs-item">
+                        <a class="breadcrumbs-link">Моноподы для селфи</a>
+                    </li>
+                </ul>
+            </header>
 
+            <section class="catalog-products">
+                <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+                <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Цвет</legend>
+                        <ul class="catalog-filter-list">
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="Черный" checked>
+                                    Черный
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="Белый" checked>
+                                    Белый
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="Синий">
+                                    Синий
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="Красный">
+                                    Красный
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="checkbox" name="Розовый">
+                                    Розовый
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="button button-filter" type="submit">Показать</button>
+                </form>
+            </section>
+          </main>
+           <!-- подвал сайта -->
           <footer class="page-footer">
             <section class="footer-address">
               <h2 class="visually-hidden">Логотип сайта</h2>
@@ -114,5 +176,6 @@
               <h2 class="visually-hidden">Логотип "html academy"</h2>
               <img class="footer-logo-image" src="https://htmlacademy.ru/" alt="Логотип html academy">
             </section>
+          </footer>
 	 </body>
   </html>
