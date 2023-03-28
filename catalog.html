@@ -83,7 +83,7 @@
             </header>
 
             <section class="catalog-products">
-                <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+                <h2 class="filter-title">Фильтр:</h2>
                 <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
                     <fieldset class="catalog-filter-group">
                         <legend class="catalog-filter-title">Цвет</legend>
@@ -120,8 +120,40 @@
                             </li>
                         </ul>
                     </fieldset>
+
+                    <fieldset class="catalog-filter-group">
+                        <legend class="catalog-filter-title">Bluetooth</legend>
+                        <ul class="catalog-filter-list">
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="radio" name="bluetooth" checked>
+                                    Есть
+                                </label>
+                            </li>
+                            <li class="catalog-filter-item">
+                                <label class="control">
+                                    <input class="control-input" type="radio" name="bluetooth">
+                                    Нет
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
                     <button class="button button-filter" type="submit">Показать</button>
                 </form>
+
+                <h2 class="sorting-title">Сортировка:</h2>
+                <select class="select-control" aria-label="Сортировка">
+                    <option value="popular">Популярные</option>
+                    <option value="cheap">Дешевые</option>
+                    <option value="expensive">Дорогие</option>
+                </select>
+
+                <a class="button-prev" href="#">
+                    <span class="visually-hidden">Назад</span>
+                </a>
+                <a class="button-next" href="#">
+                    <span class="visually-hidden">Вперед</span>
+                </a>
             </section>
           </main>
            <!-- подвал сайта -->
