@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: "raleway" sans-serif;
+    font-family: "raleway", sans-serif;
     font-size: 18px;
     line-height: 20px;
     color: #000000;
@@ -34,3 +34,28 @@ body {
     background-color: #FFE17F;
     color: #000000;
 }
+
+.search-menu-link,
+.user-menu-link {
+    font-family: "rubik";
+    line-height: 30px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    background-color: #FFE17F;
+    text-decoration: none;
+}
+
+.toggler-link,
+.navigation-link {
+    font-family: "raleway", sans-serif;
+    line-height: 21px;
+    color: #000000;
+    background-color: #FFE17F;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
