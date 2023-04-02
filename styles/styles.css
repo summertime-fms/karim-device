@@ -59,3 +59,38 @@ body {
 
 }
 
+.gallery-description-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.gallery-description .gallery-text {
+    font-family: "rubik", sans-serif;
+    line-height: 30px;
+}
+
+.gallery-description-link {
+    padding: 10px 5px;
+    color: #000000;
+    background-color: #FFE17F;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.distance-title,
+.defeat-title {
+    font-family: "rubik", sans-serif;
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.distance-text,
+.defeat-text {
+    font-family: "rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
