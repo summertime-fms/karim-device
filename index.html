@@ -89,15 +89,19 @@
             <span class="visually-hidden">Следуюшее фото</span>
           </button>
          <!-- Описание товаров -->
-          <h2 class="gallery-description-title">Порхает как бабочка,<br> жалит как пчела!</h2>
-          <p class="gallery-text">Это обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированный под стандартную камеру.</p>
-          <a class="button gallery-description-link" href="#">Подробнее</a>
-
-          <h3 class="distance-title">800 м</h3>
-          <p class="distance-text">Дальность полета</p>
-
-          <h3 class="defeat-title">50 м</h3>
-          <p class="defeat-text">Радиус поражения</p>
+          <dl>
+            <dt class="gallery-description-title">Порхает как бабочка,<br> жалит как пчела!</dt>
+            <dd class="gallery-text">Это обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированный под стандартную камеру.</dd>
+            <a class="button gallery-description-link" href="#">Подробнее</a>
+          </dl>
+          <dl>
+            <dt class="distance-title">800 м</dt>
+            <dd class="distance-text">Дальность полета</dd>
+          </dl>
+          <dl>
+            <dt class="defeat-title">50 м</dt>
+            <dd class="defeat-text">Радиус поражения</dd>
+          </dl>
         </section>
 
         <ol class="indicators-list">
@@ -248,8 +252,20 @@
             </svg>
           </div>
             <h2 class="delivery-title">Доставим редкий товар под заказ</h2>
-            <img class="delivery-image" src="" alt="восклицательный знак">
+            <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20.5" cy="20" r="20" fill="#DCDCDC" fill-opacity="0.5"/>
+              <g opacity="0.3" clip-path="url(#clip0_41517_28)">
+              <path d="M21 14H19V16H21V14Z" fill="black"/>
+              <path d="M21 18H19V26H21V18Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_41517_28">
+              <rect width="2" height="12" fill="white" transform="translate(19 14)"/>
+              </clipPath>
+              </defs>
+            </svg>
         </div>
+
         <!-- О нас -->
         <section class="about-us">
           <h2 class="about-us-title">О нас</h2>
@@ -257,9 +273,9 @@
           <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
 
           <ul class="about-us-list">
-            <li class="about-us-item">Меловые линии</li>
-            <li class="about-us-item">СДИК</li>
-            <li class="about-us-item">ТоксБерри</li>
+            <li>Меловые линии</li>
+            <li>СДИК</li>
+            <li>ТоксБерри</li>
           </ul>
           <a class="button about-us-button" href="#">Подробнее о нас</a>
         </section>
@@ -286,7 +302,7 @@
           <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="text" name="subscribe-email" placeholder="Ваш e-mail">
+            <input type="email" name="subscribe-email" placeholder="Ваш e-mail" required>
             <button class="subscribe-button" type="submit">Подписаться</button>
           </form>
           <span>
