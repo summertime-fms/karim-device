@@ -79,6 +79,7 @@ body {
     letter-spacing: 3px;
 }
 
+
 .distance-title,
 .defeat-title {
     font-family: "rubik", sans-serif;
@@ -94,3 +95,23 @@ body {
     font-size: 16px;
     line-height: 30px;
 }
+
+.category-background {
+    background-color: #FFE17F;
+    width: 160px;
+    height: 160px;
+}
+
+.category svg {
+    padding: 30px 30px;
+}
+
+.category-link {
+    font-family: "raleway", sans-serif;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 800;
+    
+}
+
