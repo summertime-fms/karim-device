@@ -167,3 +167,49 @@ body {
     letter-spacing: 3px;
 }
 
+.background-truck {
+    background-color: #FFE17F;
+    width: 125px;
+    height: 100px;
+}
+
+.background-truck svg {
+    padding: 35px 39px 34px;
+}
+
+.about-us-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.about-us-text {
+    font-family: "rubik";
+    font-weight: 400;
+    line-height: 30px;
+    color: #444444;
+}
+
+.about-us-list {
+    font-family: "rubik";
+    font-weight: 700;
+    letter-spacing: -2%;
+    
+}
+
+.about-us-list li {
+    color: #FFC700;
+}
+
+.about-us-list span {
+    color: #000000;
+}
+
+.about-us-button {
+    font-weight: 800;
+    line-height: 21px;
+    color: black;
+    letter-spacing: 3px;
+    text-decoration: none;
+    background-color: #FFE17F;
+}
