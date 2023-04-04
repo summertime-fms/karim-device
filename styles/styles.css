@@ -65,7 +65,7 @@ body {
     line-height: 50px;
 }
 
-.gallery-description .gallery-text {
+.gallery-text {
     font-family: "rubik", sans-serif;
     line-height: 30px;
 }
@@ -102,9 +102,11 @@ body {
     height: 160px;
 }
 
-.category svg {
-    padding: 30px 30px;
+.category .category-image:first-child {
+    padding: 54px 31px 51px 32px;
 }
+
+
 
 .category-link {
     font-family: "raleway", sans-serif;
@@ -112,6 +114,6 @@ body {
     color: #000000;
     text-decoration: none;
     font-weight: 800;
-    
+
 }
 
