@@ -268,5 +268,22 @@ body {
     background-color: #FFE17F;
 }
 
+.subscribe-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
 
+.subscribe-text {
+    font-family: "rubik";
+    font-weight: 400;
+    line-height: 30px;
+    color: #444444;
+}
 
+.subscribe span {
+    font-family: "rubik";
+    font-weight: 400;
+    line-height: 30px;
+    color: #444444;
+}
