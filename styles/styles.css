@@ -37,7 +37,7 @@ body {
 
 .search-menu-link,
 .user-menu-link {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     line-height: 30px;
     color: #000000;
     font-weight: 400;
@@ -195,7 +195,7 @@ body {
 }
 
 .about-us-list {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     font-weight: 700;
     letter-spacing: -2%;
     
@@ -225,14 +225,14 @@ body {
 }
 
 .contacts-text {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     font-weight: 400;
     line-height: 30px;
     color: #444444;
 }
 
 .contacts-subtitle {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -240,7 +240,7 @@ body {
 }
 
 .contacts-address {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     font-style: normal;
     color: #444444;
 }
@@ -257,7 +257,7 @@ body {
 }
 
 .contacts-schedule {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     font-weight: 400;
     color: #444444;
     line-height: 30px;
@@ -283,14 +283,14 @@ body {
 }
 
 .subscribe-text {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     font-weight: 400;
     line-height: 30px;
     color: #444444;
 }
 
 .subscribe span {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     font-weight: 400;
     line-height: 30px;
     color: #444444;
@@ -312,7 +312,7 @@ body {
 }
 
 .footer-address-text {
-    font-family: "rubik";
+    font-family: "rubik", sans-serif;
     font-weight: 400;
     line-height: 20px;
 }
@@ -330,7 +330,7 @@ body {
 
 
 .footer-phone {
-    font-family: "rubik";
+    font-family: "rubik" sans-serif;
     font-weight: 400;
     line-height: 20px;
 }
