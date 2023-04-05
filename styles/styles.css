@@ -30,6 +30,7 @@ body {
     background-color: #ffffff;
 }
 
+/* Шапка сайта */
 .header {
     background-color: #FFE17F;
     color: #000000;
@@ -59,6 +60,7 @@ body {
 
 }
 
+/* Описание товаров */
 .gallery-description-title {
     font-weight: 800;
     font-size: 50px;
@@ -98,6 +100,7 @@ body {
     line-height: 30px;
 }
 
+/* Список категорий товаров */
 .category-background {
     background-color: #FFE17F;
     width: 160px;
@@ -137,6 +140,7 @@ body {
 
 }
 
+/* Преимущества */
 .advantages {
     background-color: #F0F0F0;
 }
@@ -164,13 +168,7 @@ body {
 
 }
 
-.delivery-title {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 3px;
-}
-
+/* Редкий товар под заказ */
 .background-truck {
     background-color: #FFE17F;
     width: 125px;
@@ -181,6 +179,14 @@ body {
     padding: 35px 39px 34px;
 }
 
+.delivery-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+
+/* О нас */
 .about-us-title {
     font-weight: 800;
     font-size: 50px;
@@ -218,6 +224,7 @@ body {
     background-color: #FFE17F;
 }
 
+/* Контакты */
 .contacts-title {
     font-weight: 800;
     font-size: 50px;
@@ -272,6 +279,7 @@ body {
     background-color: #FFE17F;
 }
 
+/* Рассылка */
 .subscribe {
     background-color: #F0F0F0;
 }
@@ -296,6 +304,7 @@ body {
     color: #444444;
 }
 
+/* Шапка сайта */
 .page-footer {
     font-family: 400;
     font-size: 16px;
@@ -351,6 +360,7 @@ body {
     line-height: 50px;
 }
 
+/* Хлебные крошки */
 .breadcrumbs {
     font-family: "rubik", sans-serif;
     font-weight: 400;
@@ -362,6 +372,7 @@ body {
     color: #000000;
 }
 
+/* Фильтр каталога */
 .filter-title {
     font-weight: 800;
     font-size: 16px;
@@ -378,6 +389,7 @@ body {
     text-transform: uppercase;
 }
 
+/* Различные товары */
 .product-link {
     font-family: "rubik", sans-serif;
     font-weight: 700;
@@ -394,7 +406,6 @@ body {
 }
 
 /* Пагинация */
-
 .pagination-prev {
     font-weight: 800;
     line-height: 21px;
