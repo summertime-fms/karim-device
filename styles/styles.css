@@ -43,7 +43,7 @@ body {
     color: #000000;
     font-weight: 400;
     text-align: center;
-    background-color: #FFE17F;
+    background-color: #ffe17f;
     text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ body {
     font-family: "raleway", sans-serif;
     line-height: 21px;
     color: #000000;
-    background-color: #FFE17F;
+    background-color: #ffe17f;
     font-weight: 800;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -77,7 +77,7 @@ body {
 .gallery-description-link {
     padding: 10px 5px;
     color: #000000;
-    background-color: #FFE17F;
+    background-color: #ffe17f;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -102,7 +102,7 @@ body {
 
 /* Список категорий товаров */
 .category-background {
-    background-color: #FFE17F;
+    background-color: #ffe17f;
     width: 160px;
     height: 160px;
 }
@@ -170,7 +170,7 @@ body {
 
 /* Редкий товар под заказ */
 .background-truck {
-    background-color: #FFE17F;
+    background-color: #ffe17f;
     width: 125px;
     height: 100px;
 }
@@ -221,7 +221,7 @@ body {
     color: black;
     letter-spacing: 3px;
     text-decoration: none;
-    background-color: #FFE17F;
+    background-color: #ffe17f;
 }
 
 /* Контакты */
@@ -276,7 +276,7 @@ body {
     color: black;
     letter-spacing: 3px;
     text-decoration: none;
-    background-color: #FFE17F;
+    background-color: #ffe17f;
 }
 
 /* Рассылка */
