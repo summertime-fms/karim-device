@@ -1,0 +1,413 @@
+@font-face {
+  font-family: "raleway";
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "rubik";
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "raleway", sans-serif, "arial";
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Шапка сайта */
+.header {
+  background-color: #ffe17f;
+  color: #000000;
+}
+
+.search-menu-link,
+.user-menu-link {
+  font-family: "rubik", sans-serif;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 400;
+  text-align: center;
+  background-color: #ffe17f;
+  text-decoration: none;
+}
+
+.toggler-link,
+.navigation-link {
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffe17f;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Описание товаров */
+.gallery-description-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.gallery-text {
+  font-family: "rubik", sans-serif;
+  line-height: 30px;
+  color: #444444;
+}
+
+.gallery-description-link {
+  padding: 10px 5px;
+  color: #000000;
+  background-color: #ffe17f;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.distance-title,
+.defeat-title {
+  font-family: "rubik", sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.distance-text,
+.defeat-text {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+/* Список категорий товаров */
+.category-background {
+  background-color: #ffe17f;
+  width: 160px;
+  height: 160px;
+}
+
+.category .category-image-1 {
+  padding: 51px 32px;
+}
+
+.category .category-image-2 {
+  padding: 44px 37px 1px;
+}
+
+.category .category-image-3 {
+  padding: 37px 45px;
+}
+
+.category .category-image-4 {
+  padding: 48px 27px 47px;
+}
+
+.category .category-image-5 {
+  padding: 32px 52px 30px;
+}
+
+.category .category-image-6 {
+  padding: 46px 14px 45px;
+}
+
+.category-link {
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+/* Преимущества */
+.advantages {
+  background-color: #f0f0f0;
+}
+
+.advantages-list {
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.advantages-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.advantages-text {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+/* Редкий товар под заказ */
+.background-truck {
+  background-color: #ffe17f;
+  width: 125px;
+  height: 100px;
+}
+
+.background-truck svg {
+  padding: 35px 39px 34px;
+}
+
+.delivery-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 3px;
+}
+
+/* О нас */
+.about-us-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about-us-text {
+  font-family: "rubik";
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.about-us-list {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  letter-spacing: -2%;
+}
+
+.about-us-list li {
+  color: #ffc700;
+}
+
+.about-us-list span {
+  color: #000000;
+}
+
+.about-us-button {
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  background-color: #ffe17f;
+}
+
+/* Контакты */
+.contacts-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.contacts-text {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-subtitle {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-address {
+  font-family: "rubik", sans-serif;
+  font-style: normal;
+  color: #444444;
+}
+
+.contacts-address-text {
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contacts-phone {
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts-schedule {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  color: #444444;
+  line-height: 30px;
+}
+
+.contacts-button {
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  background-color: #ffe17f;
+}
+
+/* Рассылка */
+.subscribe {
+  background-color: #f0f0f0;
+}
+
+.subscribe-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.subscribe-text {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.subscribe span {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+/* Шапка сайта */
+.page-footer {
+  font-family: 400;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.page-footer a {
+  color: #ffffff;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.footer-address-text {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.footer-menu-list {
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 2px;
+}
+
+.footer-menu-link {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-phone {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Стили для каталога */
+
+.sign-out-link {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.inner-header-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.breadcrumbs-link:first-child {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Фильтр каталога */
+.filter-title {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.button-filter {
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* Различные товары */
+.product-link {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-card-price {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+  color: #444444;
+}
+
+/* Пагинация */
+.pagination-prev {
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination-next {
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
