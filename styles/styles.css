@@ -22,6 +22,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "raleway", sans-serif, "arial";
   font-size: 18px;
