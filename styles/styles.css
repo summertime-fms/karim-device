@@ -163,6 +163,17 @@ body {
 }
 
 /* Список категорий товаров */
+
+.category-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.category-item:not(:first-child) {
+  margin-left: 40px;
+}
+
 .category-background {
   background-color: #ffe17f;
   width: 160px;
