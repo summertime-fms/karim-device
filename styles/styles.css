@@ -216,6 +216,25 @@ body {
   background-color: #f0f0f0;
 }
 
+.advantages-container {
+  display: flex;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-container dl {
+  margin: 0;
+  margin-left: 243px;
+  padding: 0;
+}
+
+.advantages-container dt {
+  margin-left: 39px;
+}
+
 .advantages-list {
   font-weight: 800;
   line-height: 21px;
@@ -234,6 +253,10 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+}
+
+.advantages-container svg {
+  margin-left: 106px;
 }
 
 /* Редкий товар под заказ */
