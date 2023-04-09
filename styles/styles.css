@@ -60,16 +60,35 @@ body {
   position: absolute;
 }
 
-.search-menu-list,
+.sign-in-list,
 .user-menu-list,
 .toggler-link,
 .navigation-menu {
   margin: 0;
   padding: 0;
-  width: 520px;
 }
 
-.search-menu-link,
+.form-menu {
+  width: 517px;
+}
+
+.sign-in-list {
+  width: 231px;
+}
+
+.user-menu-list {
+  margin-left: auto;
+}
+
+.toggler-link {
+  width: 293px;
+}
+
+.navigation-menu {
+  margin-left: auto;
+}
+
+.sign-in-link,
 .user-menu-link {
   font-family: "rubik", sans-serif;
   line-height: 30px;
@@ -397,7 +416,7 @@ body {
 /* Фильтр каталога */
 
 .catalog-products {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .filter-title {
