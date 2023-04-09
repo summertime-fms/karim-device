@@ -530,6 +530,14 @@ body {
   background-color: #f0f0f0;
 }
 
+.catalog-products-container {
+  display: flex;
+}
+
+.filter-container {
+  width: 320px;
+}
+
 .filter-title {
   font-weight: 800;
   font-size: 16px;
@@ -543,6 +551,10 @@ body {
   line-height: 21px;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.catalog-right-column {
+  width: 840px;
 }
 
 /* Различные товары */
