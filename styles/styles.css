@@ -388,6 +388,11 @@ body {
 }
 
 /* Различные товары */
+
+.product-container {
+  background-color: #ffffff;
+}
+
 .product-link {
   font-family: "rubik", sans-serif;
   font-weight: 700;
