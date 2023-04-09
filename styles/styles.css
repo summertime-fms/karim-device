@@ -260,6 +260,13 @@ body {
 }
 
 /* Редкий товар под заказ */
+
+.delivery-container {
+  display: flex;
+  background-color: #f0f0f0;
+  justify-content: space-between;
+}
+
 .background-truck {
   background-color: #ffe17f;
   width: 125px;
@@ -271,10 +278,17 @@ body {
 }
 
 .delivery-title {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-weight: 800;
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 3px;
+}
+
+.background-exclamation-point svg {
+  padding: 30px 42px;
 }
 
 /* О нас */
