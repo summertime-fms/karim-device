@@ -111,6 +111,20 @@ body {
 }
 
 /* Описание товаров */
+
+.gallery {
+  display: flex;
+}
+
+.gallery-image {
+  width: 560px;
+}
+
+.gallery-description {
+  width: 560px;
+  margin-left: 40px;
+}
+
 .gallery-description-title {
   font-weight: 800;
   font-size: 50px;

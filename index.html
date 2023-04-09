@@ -117,43 +117,47 @@
     <!-- Главная структура страницы -->
     <main class="main-index">
       <!-- Галерея товаров -->
-      <div class="container">
+      <div class="container gallery-container">
         <h2 class="visually-hidden">Галерея</h2>
 
         <section class="gallery">
-          <img
-            class="slider-image"
-            src="images/quadrocopter.png"
-            width="560px"
-            height="560px"
-            alt="Квадрокоптер"
-          />
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next">
-            <span class="visually-hidden">Следуюшее фото</span>
-          </button>
+          <div class="gallery-image">
+            <img
+              class="slider-image"
+              src="images/quadrocopter.png"
+              width="560px"
+              height="560px"
+              alt="Квадрокоптер"
+            />
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="slider-button slider-next">
+              <span class="visually-hidden">Следуюшее фото</span>
+            </button>
+          </div>
           <!-- Описание товаров -->
-          <dl>
-            <dt class="gallery-description-title">
-              Порхает как бабочка,<br />
-              жалит как пчела!
-            </dt>
-            <dd class="gallery-text">
-              Это обычный, на первый взгляд, квадрокоптер оснащен<br />
-              мощным лазером, замаскированный под стандартную камеру.
-            </dd>
-            <a class="button gallery-description-link" href="#">Подробнее</a>
-          </dl>
-          <dl>
-            <dt class="distance-title">800 м</dt>
-            <dd class="distance-text">Дальность полета</dd>
-          </dl>
-          <dl>
-            <dt class="defeat-title">50 м</dt>
-            <dd class="defeat-text">Радиус поражения</dd>
-          </dl>
+          <div class="gallery-description">
+            <dl>
+              <dt class="gallery-description-title">
+                Порхает как бабочка,<br />
+                жалит как пчела!
+              </dt>
+              <dd class="gallery-text">
+                Это обычный, на первый взгляд, квадрокоптер оснащен<br />
+                мощным лазером, замаскированный под стандартную камеру.
+              </dd>
+              <a class="button gallery-description-link" href="#">Подробнее</a>
+            </dl>
+            <dl>
+              <dt class="distance-title">800 м</dt>
+              <dd class="distance-text">Дальность полета</dd>
+            </dl>
+            <dl>
+              <dt class="defeat-title">50 м</dt>
+              <dd class="defeat-text">Радиус поражения</dd>
+            </dl>
+          </div>
         </section>
 
         <ol class="indicators-list">
