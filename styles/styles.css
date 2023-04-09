@@ -53,6 +53,14 @@ body {
   margin: 0 auto;
   display: flex;
   width: 1040px;
+  flex-wrap: wrap;
+}
+
+.search-menu-list,
+.user-menu-list,
+.navigation-menu {
+  margin: 0;
+  padding: 0;
 }
 
 .search-menu-link,
