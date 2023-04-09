@@ -469,7 +469,6 @@ body {
 
 
 /* Подвал-навигация */
-
 .footer-menu {
   width: 444px;
 }
@@ -486,10 +485,9 @@ body {
 }
 
 /* Подвал номер телефона */
-
 .footer-contacts-phone {
   margin-left: auto;
-  width: 175px;
+  max-width: 180px;
 }
 
 .footer-phone {
