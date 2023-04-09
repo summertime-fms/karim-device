@@ -56,11 +56,17 @@ body {
   flex-wrap: wrap;
 }
 
+.header-logo img {
+  position: absolute;
+}
+
 .search-menu-list,
 .user-menu-list,
+.toggler-link,
 .navigation-menu {
   margin: 0;
   padding: 0;
+  width: 520px;
 }
 
 .search-menu-link,
