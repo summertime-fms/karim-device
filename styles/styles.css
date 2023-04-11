@@ -67,6 +67,12 @@ body {
   padding: 0;
 }
 
+.sign-in-item,
+.user-menu-item,
+.navigation-item {
+  list-style: none;
+}
+
 .form-menu {
   width: 517px;
 }
