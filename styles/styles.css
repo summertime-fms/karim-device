@@ -115,6 +115,10 @@ body {
   text-decoration: none;
 }
 
+.main-index {
+  flex-grow: 1;
+}
+
 /* Описание товаров */
 
 .gallery {
@@ -469,7 +473,6 @@ body {
   font-weight: 400;
   line-height: 20px;
 }
-
 
 /* Подвал-навигация */
 .footer-menu {
