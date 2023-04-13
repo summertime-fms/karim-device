@@ -37,6 +37,19 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   width: 1160px;
@@ -113,10 +126,6 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.main-index {
-  flex-grow: 1;
 }
 
 /* Описание товаров */
