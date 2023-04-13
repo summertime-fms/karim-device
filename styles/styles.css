@@ -412,6 +412,7 @@ body {
 /* Контакты */
 
 .contacts {
+  margin-bottom: 70px;
   width: 532px;
 }
 
@@ -425,6 +426,8 @@ body {
 }
 
 .contacts-text {
+  margin: 0;
+  margin-bottom: 30px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
@@ -432,6 +435,8 @@ body {
 }
 
 .contacts-subtitle {
+  margin: 0;
+  margin-bottom: 15px;
   font-family: "rubik", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -440,12 +445,14 @@ body {
 }
 
 .contacts-address {
+  margin-bottom: 30px;
   font-family: "rubik", sans-serif;
   font-style: normal;
   color: #444444;
 }
 
 .contacts-address-text {
+  margin: 0;
   font-weight: 400;
   line-height: 30px;
 }
@@ -457,6 +464,10 @@ body {
 }
 
 .contacts-schedule {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   color: #444444;
