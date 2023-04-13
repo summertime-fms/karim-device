@@ -37,6 +37,19 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   width: 1160px;
@@ -61,24 +74,35 @@ body {
 
 .sign-in-list,
 .user-menu-list,
-.toggler-link,
 .navigation-menu {
   margin: 0;
   padding: 0;
-}
-
-.sign-in-item,
-.user-menu-item,
-.navigation-item {
+  display: flex;
   list-style: none;
 }
 
 .form-menu {
   width: 517px;
+  margin-right: 26px;
 }
 
-.sign-in-list {
-  width: 231px;
+.sign-in-link svg {
+  margin-right: 13px;
+}
+
+.user-menu-list {
+}
+
+.user-menu-item {
+  margin-left: 36px;
+}
+
+.user-menu-link svg {
+  margin-right: 12px;
+}
+
+.navigation-item {
+  margin-left: 50px;
 }
 
 .user-menu-list {
@@ -115,10 +139,6 @@ body {
   text-decoration: none;
 }
 
-.main-index {
-  flex-grow: 1;
-}
-
 /* Описание товаров */
 
 .gallery {
@@ -134,13 +154,20 @@ body {
   width: 560px;
 }
 
+.gallery-description dl {
+  margin: 0;
+}
+
 .gallery-description-title {
+  margin-bottom: 29px;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
 
 .gallery-text {
+  margin: 0;
+  margin-bottom: 50px;
   font-family: "rubik", sans-serif;
   line-height: 30px;
   color: #444444;
@@ -155,8 +182,15 @@ body {
   letter-spacing: 3px;
 }
 
+.distance-container {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+
 .distance-title,
 .defeat-title {
+  margin-bottom: 12px;
   font-family: "rubik", sans-serif;
   font-size: 36px;
   line-height: 30px;
@@ -165,6 +199,7 @@ body {
 
 .distance-text,
 .defeat-text {
+  margin: 0;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
