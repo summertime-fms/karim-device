@@ -74,20 +74,28 @@ body {
 
 .sign-in-list,
 .user-menu-list,
-.toggler-link,
 .navigation-menu {
   margin: 0;
   padding: 0;
-}
-
-.sign-in-item,
-.user-menu-item,
-.navigation-item {
+  display: flex;
   list-style: none;
 }
 
+.sign-in-list {
+  margin-right: auto;
+}
+
+.user-menu-list {
+  width: 240px;
+  justify-content: space-between;
+}
+
+.navigation-item {
+  margin-left: 50px;
+}
+
 .form-menu {
-  width: 517px;
+  width: 554px;
 }
 
 .sign-in-list {
