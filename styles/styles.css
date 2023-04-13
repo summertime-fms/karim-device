@@ -495,7 +495,8 @@ body {
 
 .subscribe-title {
   margin: 0;
-  padding: 0;
+  margin-top: 64px;
+  margin-bottom: 144px;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -503,8 +504,9 @@ body {
 
 .subscribe-text {
   margin: 0;
+  margin-top: 74px;
   margin-left: 252px;
-  padding: 0;
+  margin-bottom: 144px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
@@ -512,6 +514,7 @@ body {
 }
 
 .subscribe span {
+  margin-bottom: 69px;
   margin-left: auto;
   font-family: "rubik", sans-serif;
   font-weight: 400;
