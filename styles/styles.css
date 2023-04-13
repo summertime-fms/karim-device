@@ -81,26 +81,33 @@ body {
   list-style: none;
 }
 
-.sign-in-list {
-  margin-right: auto;
+.form-menu {
+  width: 517px;
+  margin-right: 26px;
 }
 
+
+.sign-in-link svg {
+  margin-right: 13px;
+}
+
+
 .user-menu-list {
-  width: 240px;
-  justify-content: space-between;
+
+}
+
+.user-menu-item {
+  margin-left: 36px;
+}
+
+.user-menu-link svg {
+  margin-right: 12px;
 }
 
 .navigation-item {
   margin-left: 50px;
 }
 
-.form-menu {
-  width: 554px;
-}
-
-.sign-in-list {
-  width: 231px;
-}
 
 .user-menu-list {
   margin-left: auto;
@@ -151,13 +158,19 @@ body {
   width: 560px;
 }
 
+.gallery-description dl {
+  margin: 0;
+}
+
 .gallery-description-title {
+  margin-bottom: 29px;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
 
 .gallery-text {
+  margin: 0;
   font-family: "rubik", sans-serif;
   line-height: 30px;
   color: #444444;
