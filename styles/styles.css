@@ -22,12 +22,24 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "raleway", sans-serif, "arial";
   font-size: 18px;
   line-height: 20px;
   color: #000000;
   background-color: #ffffff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1160px;
 }
 
 /* Шапка сайта */
@@ -36,7 +48,52 @@ body {
   color: #000000;
 }
 
-.search-menu-link,
+.navigation {
+  margin: 0 auto;
+  display: flex;
+  width: 1040px;
+  flex-wrap: wrap;
+}
+
+.header-logo img {
+  position: absolute;
+}
+
+.sign-in-list,
+.user-menu-list,
+.toggler-link,
+.navigation-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.sign-in-item,
+.user-menu-item,
+.navigation-item {
+  list-style: none;
+}
+
+.form-menu {
+  width: 517px;
+}
+
+.sign-in-list {
+  width: 231px;
+}
+
+.user-menu-list {
+  margin-left: auto;
+}
+
+.toggler-link {
+  width: 293px;
+}
+
+.navigation-menu {
+  margin-left: auto;
+}
+
+.sign-in-link,
 .user-menu-link {
   font-family: "rubik", sans-serif;
   line-height: 30px;
@@ -58,7 +115,25 @@ body {
   text-decoration: none;
 }
 
+.main-index {
+  flex-grow: 1;
+}
+
 /* Описание товаров */
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-image {
+  width: 560px;
+}
+
+.gallery-description {
+  width: 560px;
+}
+
 .gallery-description-title {
   font-weight: 800;
   font-size: 50px;
@@ -97,6 +172,14 @@ body {
 }
 
 /* Список категорий товаров */
+
+.category-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
 .category-background {
   background-color: #ffe17f;
   width: 160px;
@@ -139,6 +222,25 @@ body {
   background-color: #f0f0f0;
 }
 
+.advantages-container {
+  display: flex;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-container dl {
+  margin: 0;
+  margin-left: 243px;
+  padding: 0;
+}
+
+.advantages-container dt {
+  margin-left: 39px;
+}
+
 .advantages-list {
   font-weight: 800;
   line-height: 21px;
@@ -159,7 +261,18 @@ body {
   color: #444444;
 }
 
+.advantages-container svg {
+  margin-left: 106px;
+}
+
 /* Редкий товар под заказ */
+
+.delivery-container {
+  display: flex;
+  background-color: #f0f0f0;
+  justify-content: space-between;
+}
+
 .background-truck {
   background-color: #ffe17f;
   width: 125px;
@@ -171,13 +284,30 @@ body {
 }
 
 .delivery-title {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
   font-weight: 800;
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 3px;
 }
 
+.background-exclamation-point svg {
+  padding: 30px 42px;
+}
+
 /* О нас */
+
+.information-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 520px;
+}
+
 .about-us-title {
   font-weight: 800;
   font-size: 50px;
@@ -215,6 +345,11 @@ body {
 }
 
 /* Контакты */
+
+.contacts {
+  width: 532px;
+}
+
 .contacts-title {
   font-weight: 800;
   font-size: 50px;
@@ -274,13 +409,23 @@ body {
   background-color: #f0f0f0;
 }
 
+.subscribe-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .subscribe-title {
+  margin: 0;
+  padding: 0;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
 
 .subscribe-text {
+  margin: 0;
+  margin-left: 252px;
+  padding: 0;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
@@ -288,13 +433,14 @@ body {
 }
 
 .subscribe span {
+  margin-left: auto;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
 }
 
-/* Шапка сайта */
+/* Подвал сайта */
 .page-footer {
   font-family: 400;
   font-size: 16px;
@@ -302,11 +448,23 @@ body {
   background-color: #444444;
 }
 
+.footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .page-footer a {
   color: #ffffff;
 }
 
+/* Подвал-адрес */
 .footer-address {
+  width: 240px;
+  margin-right: 124px;
+}
+
+.footer-address address {
   font-style: normal;
 }
 
@@ -314,6 +472,11 @@ body {
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 20px;
+}
+
+/* Подвал-навигация */
+.footer-menu {
+  width: 444px;
 }
 
 .footer-menu-list {
@@ -325,6 +488,12 @@ body {
 .footer-menu-link {
   font-weight: 800;
   text-decoration: none;
+}
+
+/* Подвал номер телефона */
+.footer-contacts-phone {
+  margin-left: auto;
+  max-width: 180px;
 }
 
 .footer-phone {
@@ -362,6 +531,19 @@ body {
 }
 
 /* Фильтр каталога */
+
+.catalog-products {
+  background-color: #f0f0f0;
+}
+
+.catalog-products-container {
+  display: flex;
+}
+
+.filter-container {
+  width: 320px;
+}
+
 .filter-title {
   font-weight: 800;
   font-size: 16px;
@@ -377,7 +559,16 @@ body {
   text-transform: uppercase;
 }
 
+.catalog-right-column {
+  width: 840px;
+}
+
 /* Различные товары */
+
+.product-container {
+  background-color: #ffffff;
+}
+
 .product-link {
   font-family: "rubik", sans-serif;
   font-weight: 700;
