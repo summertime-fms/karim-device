@@ -362,6 +362,13 @@ body {
   width: 520px;
 }
 
+.black-line {
+  margin-top: 70px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+}
+
 .about-us-title {
   margin: 0;
   margin-top: 47px;
@@ -514,9 +521,17 @@ body {
   color: #444444;
 }
 
+.subscribe-form-wrapper {
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: space-between;
+  width: 1158px;
+  height: 57px;
+}
+
 .subscribe span {
-  margin-bottom: 69px;
-  margin-left: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
