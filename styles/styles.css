@@ -103,15 +103,15 @@ body {
 }
 
 .user-menu-list {
-  width: 240px;
+  margin-left: auto;
 }
 
-.user-menu-item {
+.user-menu-item:not(:first-child) {
   margin-left: 36px;
 }
 
-.user-menu-link svg {
-  margin-right: 12px;
+.user-menu-link span {
+  margin-left: 12px;
 }
 
 .navigation-item {
