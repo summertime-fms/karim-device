@@ -82,11 +82,13 @@ body {
 }
 
 .form-menu {
+  margin-top: 46px;
   width: 515px;
   margin-right: 26px;
 }
 
 .sign-in-list {
+  margin-top: 51px;
   min-width: 80px;
 }
 
@@ -103,7 +105,9 @@ body {
 }
 
 .user-menu-list {
+  margin-top: 51px;
   margin-left: auto;
+  margin-bottom: 50px;
 }
 
 .user-menu-item:not(:first-child) {
@@ -123,6 +127,7 @@ body {
 }
 
 .navigation-menu {
+  margin-bottom: 34px;
   margin-left: auto;
 }
 
