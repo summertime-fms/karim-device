@@ -45,11 +45,13 @@
                     fill="black"
                   />
                 </svg>
-                Войти
+                <span>Коля Петухов</span>
               </a>
             </li>
             <li class="sign-in-item">
-              <a class="sign-in-link" href="#"> </a>
+              <a class="sign-in-link" href="#">
+                <span>Выйти</span>
+              </a>
             </li>
           </ul>
 
@@ -68,7 +70,7 @@
                   <path d="M2 4H0V12H2V4Z" fill="black" />
                   <path d="M10 3H8V12H10V3Z" fill="black" />
                 </svg>
-                Сравнить
+                <span>Сравнить</span>
               </a>
             </li>
             <li class="user-menu-item">
@@ -86,12 +88,12 @@
                     fill="black"
                   />
                 </svg>
-                Корзина
+                <span>Корзина</span>
               </a>
             </li>
           </ul>
 
-          <a class="toggler-link" href="#"> Каталог товаров </a>
+          <a class="toggler-link" href="#">Каталог товаров</a>
           <button class="button-toggler">
             <span class="visually-hidden">Посмотреть еще</span>
           </button>
@@ -225,135 +227,140 @@
               </button>
             </form>
           </div>
-        </div>
-        <!-- Сортировка товаров -->
-        <div class="catalog-right-column">
-          <div class="sorting-container">
-            <h2 class="sorting-title">Сортировка:</h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Популярные</option>
-              <option value="cheap">Дешевые</option>
-              <option value="expensive">Дорогие</option>
-            </select>
 
-            <a class="button-prev" href="#">
-              <span class="visually-hidden">Назад</span>
-              <svg
-                width="12"
-                height="10"
-                viewBox="0 0 12 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-label="кнопка назад"
-              >
-                <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
-              </svg>
-            </a>
-            <a class="button-next" href="#">
-              <span class="visually-hidden">Вперед</span>
-              <svg
-                width="12"
-                height="10"
-                viewBox="0 0 12 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-label="кнопка вперед"
-              >
-                <path d="M6 0L11.5 10H0.5" fill="black" />
-              </svg>
-            </a>
-          </div>
-          <!-- Различные товары -->
-          <div class="product-container">
-            <ul class="product-list">
-              <li class="product-card">
-                <a class="product-link" href="#">
-                  <img
-                    class="product-image"
-                    src="images/product/product-1.png"
-                    width="360"
-                    height="380"
-                    alt="Любительская селфи-палка"
-                  />
-                  <h3 class="product-title">
-                    Любительская<br />
-                    селфи-палка
-                  </h3>
-                </a>
-                <span class="product-card-price">500 ₽</span>
-              </li>
-              <li class="product-card">
-                <a class="product-link" href="#">
-                  <img
-                    class="product-image"
-                    src="images/product/product-2.png"
-                    width="360"
-                    height="380"
-                    alt="Профессиональная селфи-палка"
-                  />
-                  <h3 class="product-title">
-                    Профессиональная<br />
-                    селфи-палка
-                  </h3>
-                </a>
-                <span class="product-card-price">1 500 ₽</span>
-              </li>
-              <li class="product-card">
-                <a class="product-link" href="#">
-                  <img
-                    class="product-image"
-                    src="images/product/product-3.png"
-                    width="360"
-                    height="380"
-                    alt="Непотопляемая селфи-палка"
-                  />
-                  <h3 class="product-title">
-                    Непотопляемая<br />
-                    селфи-палка
-                  </h3>
-                </a>
-                <span class="product-card-price">2 500 ₽</span>
-              </li>
-              <li class="product-card">
-                <a class="product-link" href="#">
-                  <img
-                    class="product-image"
-                    src="images/product/product-4.png"
-                    width="360"
-                    height="380"
-                    alt="Селфи-палка «Следуй за мной»"
-                  />
-                  <h3 class="product-title">
-                    Селфи-палка «Следуй<br />
-                    за мной»
-                  </h3>
-                </a>
-                <span class="product-card-price">1 500 ₽</span>
-              </li>
-            </ul>
-            <button class="button product-show-more" type="button">
-              Загрузить ещё
-            </button>
-            <!-- Пагинация -->
-            <a class="pagination-prev" href="#">Назад</a>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">15</a>
-              </li>
-            </ul>
-            <a class="pagination-next" href="#">Вперед</a>
+          <!-- Сортировка товаров -->
+          <div class="catalog-right-column">
+            <div class="sorting-container">
+              <h2 class="sorting-title">Сортировка:</h2>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешевые</option>
+                <option value="expensive">Дорогие</option>
+              </select>
+
+              <a class="button-prev" href="#">
+                <span class="visually-hidden">Назад</span>
+                <svg
+                  width="12"
+                  height="10"
+                  viewBox="0 0 12 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="кнопка назад"
+                >
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
+                </svg>
+              </a>
+              <a class="button-next" href="#">
+                <span class="visually-hidden">Вперед</span>
+                <svg
+                  width="12"
+                  height="10"
+                  viewBox="0 0 12 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="кнопка вперед"
+                >
+                  <path d="M6 0L11.5 10H0.5" fill="black" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Различные товары -->
+            <div class="product-container">
+              <ul class="product-list">
+                <li class="product-card">
+                  <a class="product-link" href="#">
+                    <img
+                      class="product-image"
+                      src="images/product/product-1.png"
+                      width="360"
+                      height="380"
+                      alt="Любительская селфи-палка"
+                    />
+                    <h3 class="product-title">
+                      Любительская<br />
+                      селфи-палка
+                    </h3>
+                  </a>
+                  <span class="product-card-price">500 ₽</span>
+                </li>
+                <li class="product-card">
+                  <a class="product-link" href="#">
+                    <img
+                      class="product-image"
+                      src="images/product/product-2.png"
+                      width="360"
+                      height="380"
+                      alt="Профессиональная селфи-палка"
+                    />
+                    <h3 class="product-title">
+                      Профессиональная<br />
+                      селфи-палка
+                    </h3>
+                  </a>
+                  <span class="product-card-price">1 500 ₽</span>
+                </li>
+                <li class="product-card">
+                  <a class="product-link" href="#">
+                    <img
+                      class="product-image"
+                      src="images/product/product-3.png"
+                      width="360"
+                      height="380"
+                      alt="Непотопляемая селфи-палка"
+                    />
+                    <h3 class="product-title">
+                      Непотопляемая<br />
+                      селфи-палка
+                    </h3>
+                  </a>
+                  <span class="product-card-price">2 500 ₽</span>
+                </li>
+                <li class="product-card">
+                  <a class="product-link" href="#">
+                    <img
+                      class="product-image"
+                      src="images/product/product-4.png"
+                      width="360"
+                      height="380"
+                      alt="Селфи-палка «Следуй за мной»"
+                    />
+                    <h3 class="product-title">
+                      Селфи-палка «Следуй<br />
+                      за мной»
+                    </h3>
+                  </a>
+                  <span class="product-card-price">1 500 ₽</span>
+                </li>
+              </ul>
+              <button class="button product-show-more" type="button">
+                Загрузить ещё
+              </button>
+
+              <!-- Пагинация -->
+              <div class="pagination-container">
+                <a class="pagination-prev" href="#">Назад</a>
+                <ul class="pagination">
+                  <li class="pagination-item">
+                    <a class="pagination-current" href="#">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
+                </ul>
+                <a class="pagination-next" href="#">Вперед</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -405,6 +412,8 @@
               Санкт-Петербург, набережная реки Карповки, 5, литера П.
             </p>
           </address>
+
+          <div class="yellow-stick"></div>
         </section>
         <!-- Меню подвала -->
         <section class="footer-menu">
