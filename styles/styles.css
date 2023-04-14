@@ -665,6 +665,13 @@ body {
   line-height: 50px;
 }
 
+/* Заголовок страницы каталога */
+
+.inner-header-title {
+  margin-top: 35px;
+  margin-bottom: 16px;
+}
+
 /* Хлебные крошки */
 .breadcrumbs {
   font-family: "rubik", sans-serif;
