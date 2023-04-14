@@ -91,7 +91,7 @@ body {
 }
 
 .sign-in-item:not(:last-child) {
-  margin-right: 35px;
+  margin-right: 33px;
 }
 
 .sign-in-item:nth-child(2) {
@@ -99,7 +99,7 @@ body {
 }
 
 .sign-in-link svg {
-  margin-right: 13px;
+  margin-right: 11px;
 }
 
 .user-menu-list {
@@ -111,7 +111,7 @@ body {
 }
 
 .user-menu-link span {
-  margin-left: 12px;
+  margin-left: 5px;
 }
 
 .navigation-item {
