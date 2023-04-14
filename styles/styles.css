@@ -563,6 +563,13 @@ body {
   line-height: 20px;
 }
 
+.yellow-stick {
+  margin-top: 64px;
+  background-color: #ffc700;
+  width: 80px;
+  height: 7px;
+}
+
 /* Подвал-навигация */
 .footer-menu {
   margin-top: 137px;
