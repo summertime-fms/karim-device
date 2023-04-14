@@ -674,9 +674,18 @@ body {
 
 /* Хлебные крошки */
 .breadcrumbs {
+  margin: 0;
+  margin-bottom: 34px;
+  padding: 0;
+  display: flex;
+  list-style: none;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;
 }
 
 .breadcrumbs-link:first-child {
@@ -715,6 +724,16 @@ body {
 
 .catalog-right-column {
   width: 840px;
+}
+
+/* Сортировка товаров  */
+
+.sorting-container {
+  display: flex;
+}
+
+.sorting-title {
+  margin: 0;
 }
 
 /* Различные товары */
