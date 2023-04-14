@@ -625,6 +625,10 @@ body {
   height: 40px;
 }
 
+.footer-social-link svg {
+  padding: 14px 13px;
+}
+
 /* Подвал номер телефона */
 
 .footer-contacts-phone {
