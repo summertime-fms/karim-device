@@ -225,7 +225,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 39px;
   list-style: none;
 }
 
