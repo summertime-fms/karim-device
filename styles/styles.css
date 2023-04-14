@@ -730,10 +730,22 @@ body {
 
 .sorting-container {
   display: flex;
+  padding: 20px 40px;
 }
 
 .sorting-title {
   margin: 0;
+}
+
+.button-prev,
+.button-next {
+  width: 30px;
+  height: 30px;
+}
+
+.sorting-container svg {
+  padding: 10px;
+  opacity: 20%;
 }
 
 /* Различные товары */
