@@ -754,6 +754,12 @@ body {
   background-color: #ffffff;
 }
 
+.product-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .product-link {
   font-family: "rubik", sans-serif;
   font-weight: 700;
