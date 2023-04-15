@@ -154,7 +154,6 @@ body {
 }
 
 /* Описание товаров */
-
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -221,7 +220,6 @@ body {
 }
 
 /* Список категорий товаров */
-
 .category {
   margin-bottom: 70px;
 }
@@ -279,7 +277,6 @@ body {
 }
 
 /* Преимущества */
-
 .advantages {
   background-color: #f0f0f0;
   margin-bottom: 70px;
@@ -325,7 +322,6 @@ body {
 }
 
 /* Редкий товар под заказ */
-
 .delivery-container {
   display: flex;
   background-color: #f0f0f0;
@@ -357,7 +353,6 @@ body {
 }
 
 /* О нас */
-
 .information-container {
   display: flex;
   justify-content: space-between;
@@ -423,7 +418,6 @@ body {
 }
 
 /* Контакты */
-
 .contacts {
   margin-bottom: 70px;
   width: 532px;
@@ -619,7 +613,6 @@ body {
 }
 
 /* Подвал социальные сети */
-
 .footer-social-list {
   margin: 0;
   margin-bottom: 61px;
@@ -651,7 +644,6 @@ body {
 }
 
 /* Подвал номер телефона */
-
 .footer-contacts-phone {
   margin-top: 140px;
   margin-bottom: 65px;
@@ -671,7 +663,6 @@ body {
 }
 
 /* Стили для каталога */
-
 .sign-out-link {
   font-family: "rubik", sans-serif;
   font-weight: 400;
@@ -687,7 +678,6 @@ body {
 }
 
 /* Заголовок страницы каталога */
-
 .inner-header-title {
   margin-top: 35px;
   margin-bottom: 16px;
@@ -715,7 +705,6 @@ body {
 }
 
 /* Фильтр каталога */
-
 .catalog-products {
   background-color: #f0f0f0;
 }
@@ -748,7 +737,6 @@ body {
 }
 
 /* Сортировка товаров  */
-
 .sorting-container {
   display: flex;
   padding: 20px 40px;
@@ -770,9 +758,9 @@ body {
 }
 
 /* Различные товары */
-
 .product-container {
   background-color: #ffffff;
+  padding: 70px 40px 78px;
 }
 
 .product-list {
@@ -797,7 +785,6 @@ body {
 }
 
 /* Пагинация */
-
 .pagination-container {
   padding: 25px;
   display: flex;
@@ -806,12 +793,14 @@ body {
 
 .pagination-prev {
   margin-right: auto;
+  align-self: center;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  opacity: 30%;
 }
 
 .pagination {
@@ -851,6 +840,7 @@ body {
 
 .pagination-next {
   margin-left: auto;
+  align-self: center;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3px;
