@@ -766,15 +766,35 @@ body {
 .product-list {
   margin: 0;
   padding: 0;
+  display: grid;
+  column-gap: 40px;
+  row-gap: 44px;
+  grid-template-columns: 360px 360px;
   list-style: none;
 }
 
-.product-link {
+.product-card {
+  display: grid;
+  grid-template-rows: 380px 32px 40px;
+  grid-template-columns: 226px 134px;
+  width: 360px;
+  height: 452px;
+}
+
+.product-title {
+  margin: 0;
+}
+
+.product-title-link {
   font-family: "rubik", sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
   text-decoration: none;
   color: #000000;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .product-card-price {
@@ -782,6 +802,11 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #444444;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: end;
 }
 
 /* Пагинация */
