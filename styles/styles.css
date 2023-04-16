@@ -118,7 +118,7 @@ body {
   margin-left: 5px;
 }
 
-.navigation-item {
+.navigation-item:not(:first-child) {
   margin-left: 50px;
 }
 
