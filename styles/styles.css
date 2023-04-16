@@ -663,6 +663,7 @@ body {
 }
 
 /* Стили для каталога */
+
 .sign-out-link {
   font-family: "rubik", sans-serif;
   font-weight: 400;
@@ -784,6 +785,7 @@ body {
 
 .product-title {
   margin: 0;
+  max-width: 224px;
 }
 
 .product-title-link {
