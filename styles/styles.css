@@ -82,11 +82,13 @@ body {
 }
 
 .form-menu {
+  margin-top: 46px;
   width: 515px;
   margin-right: 26px;
 }
 
 .sign-in-list {
+  margin-top: 51px;
   min-width: 80px;
 }
 
@@ -103,7 +105,9 @@ body {
 }
 
 .user-menu-list {
+  margin-top: 51px;
   margin-left: auto;
+  margin-bottom: 50px;
 }
 
 .user-menu-item:not(:first-child) {
@@ -123,6 +127,7 @@ body {
 }
 
 .navigation-menu {
+  margin-bottom: 34px;
   margin-left: auto;
 }
 
@@ -149,7 +154,6 @@ body {
 }
 
 /* Описание товаров */
-
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -216,7 +220,6 @@ body {
 }
 
 /* Список категорий товаров */
-
 .category {
   margin-bottom: 70px;
 }
@@ -225,7 +228,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 39px;
   list-style: none;
 }
 
@@ -273,7 +277,6 @@ body {
 }
 
 /* Преимущества */
-
 .advantages {
   background-color: #f0f0f0;
   margin-bottom: 70px;
@@ -319,7 +322,6 @@ body {
 }
 
 /* Редкий товар под заказ */
-
 .delivery-container {
   display: flex;
   background-color: #f0f0f0;
@@ -351,7 +353,6 @@ body {
 }
 
 /* О нас */
-
 .information-container {
   display: flex;
   justify-content: space-between;
@@ -359,6 +360,13 @@ body {
 
 .about-us {
   width: 520px;
+}
+
+.black-line {
+  margin-top: 70px;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
 }
 
 .about-us-title {
@@ -410,7 +418,6 @@ body {
 }
 
 /* Контакты */
-
 .contacts {
   margin-bottom: 70px;
   width: 532px;
@@ -513,9 +520,17 @@ body {
   color: #444444;
 }
 
+.subscribe-form-wrapper {
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: space-between;
+  width: 1158px;
+  height: 57px;
+}
+
 .subscribe span {
-  margin-bottom: 69px;
-  margin-left: auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
@@ -598,7 +613,6 @@ body {
 }
 
 /* Подвал социальные сети */
-
 .footer-social-list {
   margin: 0;
   margin-bottom: 61px;
@@ -630,7 +644,6 @@ body {
 }
 
 /* Подвал номер телефона */
-
 .footer-contacts-phone {
   margin-top: 140px;
   margin-bottom: 65px;
@@ -650,7 +663,6 @@ body {
 }
 
 /* Стили для каталога */
-
 .sign-out-link {
   font-family: "rubik", sans-serif;
   font-weight: 400;
@@ -666,7 +678,6 @@ body {
 }
 
 /* Заголовок страницы каталога */
-
 .inner-header-title {
   margin-top: 35px;
   margin-bottom: 16px;
@@ -694,7 +705,6 @@ body {
 }
 
 /* Фильтр каталога */
-
 .catalog-products {
   background-color: #f0f0f0;
 }
@@ -727,7 +737,6 @@ body {
 }
 
 /* Сортировка товаров  */
-
 .sorting-container {
   display: flex;
   padding: 20px 40px;
@@ -749,23 +758,44 @@ body {
 }
 
 /* Различные товары */
-
 .product-container {
   background-color: #ffffff;
+  padding: 70px 40px 78px;
 }
 
 .product-list {
   margin: 0;
+  margin-bottom: 44px;
   padding: 0;
+  display: grid;
+  column-gap: 40px;
+  row-gap: 44px;
+  grid-template-columns: 360px 360px;
   list-style: none;
 }
 
-.product-link {
+.product-card {
+  display: grid;
+  grid-template-rows: 380px 32px 40px;
+  grid-template-columns: 226px 134px;
+  width: 360px;
+  height: 452px;
+}
+
+.product-title {
+  margin: 0;
+}
+
+.product-title-link {
   font-family: "rubik", sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
   text-decoration: none;
   color: #000000;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .product-card-price {
@@ -773,10 +803,14 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #444444;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: end;
 }
 
 /* Пагинация */
-
 .pagination-container {
   padding: 25px;
   display: flex;
@@ -785,12 +819,14 @@ body {
 
 .pagination-prev {
   margin-right: auto;
+  align-self: center;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  opacity: 30%;
 }
 
 .pagination {
@@ -830,6 +866,7 @@ body {
 
 .pagination-next {
   margin-left: auto;
+  align-self: center;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 3px;

@@ -554,6 +554,7 @@
       <!-- О нас -->
       <div class="container information-container">
         <section class="about-us">
+          <div class="black-line"></div>
           <h2 class="about-us-title">О нас</h2>
           <p class="about-us-text">
             Огромный выбор гаджетов не оставит равнодушным<br />
@@ -574,6 +575,7 @@
 
         <!-- Контакты -->
         <section class="contacts">
+          <div class="black-line"></div>
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">
             Вы можете забрать товар сами, заехав в наш офис. <br />
@@ -608,35 +610,39 @@
             длительными тест-драйвами, распаковками, а также акции,<br />
             спецпредложения и вот это вот всё.
           </p>
-          <form
-            class="subscribe-form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <input
-              type="email"
-              name="subscribe-email"
-              placeholder="Ваш e-mail"
-              required
-            />
-            <button class="subscribe-button" type="submit">Подписаться</button>
-          </form>
-          <span>
-            <svg
-              width="15"
-              height="14"
-              viewBox="0 0 15 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-label="Зеленая галочка"
+          <div class="subscribe-form-wrapper">
+            <form
+              class="subscribe-form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
             >
-              <path
-                d="M14.498 0L4.89805 9.3L0.498047 5V9.7L4.99805 14L14.498 4.7V0Z"
-                fill="#08AF00"
+              <input
+                type="email"
+                name="subscribe-email"
+                placeholder="Ваш e-mail"
+                required
               />
-            </svg>
-            Это бесплатно
-          </span>
+              <button class="subscribe-button" type="submit">
+                Подписаться
+              </button>
+            </form>
+            <span>
+              <svg
+                width="15"
+                height="14"
+                viewBox="0 0 15 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="Зеленая галочка"
+              >
+                <path
+                  d="M14.498 0L4.89805 9.3L0.498047 5V9.7L4.99805 14L14.498 4.7V0Z"
+                  fill="#08AF00"
+                />
+              </svg>
+              Это бесплатно
+            </span>
+          </div>
         </div>
       </section>
     </main>
