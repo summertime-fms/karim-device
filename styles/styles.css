@@ -57,22 +57,36 @@ body {
 
 /* Шапка сайта */
 .header {
+  margin-top: 40px;
   background-color: #ffe17f;
   color: #000000;
 }
 
-.main-header {
+.main-header::after {
+  content: "01";
+  margin-right: 49px;
+  padding-top: 65px;
+  padding-bottom: 42px;
+  display: block;
+  font-family: "rubik", sans-serif;
+  font-size: 180px;
+  font-weight: 700;
+  text-align: right;
+  color: #ffffff;
 }
 
 .navigation {
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   width: 1040px;
   flex-wrap: wrap;
 }
 
 .header-logo img {
+  display: inline-block;
   position: absolute;
+  top: 20px;
 }
 
 .sign-in-list,
@@ -85,15 +99,20 @@ body {
 }
 
 /* Поиск в меню */
-.form-menu {
+
+.first-menu-container {
   margin-top: 46px;
-  width: 515px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.form-menu {
+  width: 517px;
   margin-right: 26px;
 }
 
 /* Войти */
 .sign-in-list {
-  margin-top: 51px;
   min-width: 80px;
 }
 
@@ -111,9 +130,7 @@ body {
 
 /* Пользовательское меню */
 .user-menu-list {
-  margin-top: 51px;
   margin-left: auto;
-  margin-bottom: 50px;
 }
 
 .user-menu-item:not(:first-child) {
@@ -125,13 +142,18 @@ body {
 }
 
 /* Посмотреть ещё товары */
+
+.second-menu-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
 .toggler-link {
   width: 293px;
 }
 
 /* Меню навигации */
 .navigation-menu {
-  margin-bottom: 34px;
   margin-left: auto;
 }
 
