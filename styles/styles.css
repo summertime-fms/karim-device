@@ -61,6 +61,9 @@ body {
   color: #000000;
 }
 
+.main-header {
+}
+
 .navigation {
   margin: 0 auto;
   display: flex;
@@ -81,12 +84,14 @@ body {
   list-style: none;
 }
 
+/* Поиск в меню */
 .form-menu {
   margin-top: 46px;
   width: 515px;
   margin-right: 26px;
 }
 
+/* Войти */
 .sign-in-list {
   margin-top: 51px;
   min-width: 80px;
@@ -104,6 +109,7 @@ body {
   margin-right: 11px;
 }
 
+/* Пользовательское меню */
 .user-menu-list {
   margin-top: 51px;
   margin-left: auto;
@@ -118,17 +124,19 @@ body {
   margin-left: 5px;
 }
 
-.navigation-item:not(:first-child) {
-  margin-left: 50px;
-}
-
+/* Посмотреть ещё товары */
 .toggler-link {
   width: 293px;
 }
 
+/* Меню навигации */
 .navigation-menu {
   margin-bottom: 34px;
   margin-left: auto;
+}
+
+.navigation-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .sign-in-link,
