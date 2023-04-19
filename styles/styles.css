@@ -190,10 +190,14 @@ body {
 }
 
 .gallery-image {
+  position: relative;
+  bottom: 150px;
   width: 560px;
 }
 
 .gallery-description {
+  position: relative;
+  bottom: 30px;
   width: 560px;
 }
 
