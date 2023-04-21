@@ -34,6 +34,7 @@
               <li class="sign-in-item">
                 <a class="sign-in-link" href="#">
                   <svg
+                    class="sign-in-icon"
                     width="13"
                     height="12"
                     viewBox="0 0 13 12"
@@ -50,9 +51,7 @@
                 </a>
               </li>
               <li class="sign-in-item">
-                <a class="sign-in-link" href="#">
-                  <span>Войти</span>
-                </a>
+                <a class="sign-in-link" href="#">Выйти</a>
               </li>
             </ul>
             <!-- Пользовательское меню -->
@@ -60,6 +59,7 @@
               <li class="user-menu-item">
                 <a class="user-menu-link" href="#">
                   <svg
+                    class="user-menu-icon"
                     width="10"
                     height="12"
                     viewBox="0 0 10 12"
@@ -77,6 +77,7 @@
               <li class="user-menu-item">
                 <a class="user-menu-link" href="#">
                   <svg
+                    class="user-menu-icon"
                     width="16"
                     height="14"
                     viewBox="0 0 16 14"
@@ -242,32 +243,34 @@
                 <option value="expensive">Дорогие</option>
               </select>
 
-              <a class="button-prev" href="#">
-                <span class="visually-hidden">Назад</span>
-                <svg
-                  width="12"
-                  height="10"
-                  viewBox="0 0 12 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-label="кнопка назад"
-                >
-                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
-                </svg>
-              </a>
-              <a class="button-next" href="#">
-                <span class="visually-hidden">Вперед</span>
-                <svg
-                  width="12"
-                  height="10"
-                  viewBox="0 0 12 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-label="кнопка вперед"
-                >
-                  <path d="M6 0L11.5 10H0.5" fill="black" />
-                </svg>
-              </a>
+              <div class="sorting-container-buttons">
+                <a class="button-prev" href="#">
+                  <span class="visually-hidden">Назад</span>
+                  <svg
+                    width="12"
+                    height="10"
+                    viewBox="0 0 12 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="кнопка назад"
+                  >
+                    <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
+                  </svg>
+                </a>
+                <a class="button-next" href="#">
+                  <span class="visually-hidden">Вперед</span>
+                  <svg
+                    width="12"
+                    height="10"
+                    viewBox="0 0 12 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="кнопка вперед"
+                  >
+                    <path d="M6 0L11.5 10H0.5" fill="black" />
+                  </svg>
+                </a>
+              </div>
             </div>
 
             <!-- Различные товары -->
