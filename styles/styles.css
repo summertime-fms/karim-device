@@ -185,8 +185,49 @@ body {
   align-items: center;
 }
 
-.toggler-link {
+/* .toggler-button {
+  margin: 0;
+  display: flex;
   width: 293px;
+  height: 50px;
+} */
+
+.toggler-link {
+  display: block;
+  width: 293px;
+  height: 50px;
+  text-decoration: none;
+  position: relative;
+}
+
+.toggler-name {
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 57px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffe17f;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.toggler-icon {
+  border: 2px solid #000000;
+  padding: 16px;
+  border-radius: 50%;
+  opacity: 30%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.toggler-link .toggler-icon {
+  left: auto;
+  right: 0;
 }
 
 /* Меню навигации */
@@ -213,7 +254,6 @@ body {
   text-decoration: none;
 }
 
-.toggler-link,
 .navigation-link {
   line-height: 21px;
   color: #000000;
@@ -237,7 +277,6 @@ body {
 }
 
 /* Описание товаров */
-
 .description-number {
   position: absolute;
   top: 277px;
@@ -334,6 +373,7 @@ body {
 
 .category-list {
   margin: 0;
+  margin-bottom: 172px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -388,14 +428,18 @@ body {
 .advantages {
   background-color: #f0f0f0;
   margin-bottom: 70px;
+  height: 289px;
 }
 
 .advantages-container {
   display: flex;
+  position: relative;
+  bottom: 47px;
 }
 
 .advantages-list {
   margin: 0;
+  margin-top: 10px;
   padding: 0;
   list-style: none;
   font-weight: 800;
@@ -413,17 +457,28 @@ body {
   width: 160px;
 }
 
-.advantages-button-1::after {
-  content: "Доставка";
+.advantages-button-current {
+  padding: 10px 20px;
+  padding-right: 130px;
+  border: none;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffe17f;
   font-family: "raleway", sans-serif;
   font-weight: 800;
-  letter-spacing: 3px;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.vertical-line {
   position: absolute;
-  left: 20px;
-  bottom: 9px;
+  top: -55px;
+  left: 274px;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
 }
 
 .advantages-button-2::after {
@@ -455,7 +510,7 @@ body {
 .advantages-title {
   margin: 0;
   margin-bottom: 34px;
-  margin-left: 243px;
+  margin-left: 116px;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -463,7 +518,7 @@ body {
 
 .advantages-text {
   margin: 0;
-  margin-left: 243px;
+  margin-left: 116px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 30px;
@@ -472,6 +527,7 @@ body {
 
 .advantages-container svg {
   margin-left: 106px;
+  margin-top: 25px;
 }
 
 /* Редкий товар под заказ */
@@ -757,6 +813,10 @@ body {
   width: 240px;
 }
 
+.footer-device-link {
+  display: block;
+}
+
 .footer-address svg {
   margin-top: 62px;
   margin-bottom: 35px;
@@ -892,7 +952,20 @@ body {
 }
 
 .breadcrumbs-item {
-  margin-right: 36px;
+  margin-right: 34px;
+  position: relative;
+}
+
+.breadcrumbs-item:first-child .breadcrumbs-arrow {
+  position: absolute;
+  top: 7px;
+  left: 78px;
+}
+
+.breadcrumbs-item:nth-child(2) .breadcrumbs-arrow {
+  position: absolute;
+  top: 7px;
+  left: 143px;
 }
 
 .breadcrumbs-link:first-child {
@@ -943,18 +1016,24 @@ body {
 /* Сортировка товаров  */
 .sorting-container {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
 }
 
 .sorting-title {
   margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .button-prev,
 .button-next {
   width: 30px;
   height: 30px;
+  text-decoration: none;
 }
 
 .sorting-container svg {
