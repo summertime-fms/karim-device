@@ -80,6 +80,18 @@ body {
   top: 20px;
 }
 
+.header-logo img:hover {
+  opacity: 60%;
+}
+
+.header-logo img:active {
+  opacity: 30%;
+}
+
+.header-logo img:focus {
+  outline: 2px solid #af4fff;
+}
+
 /* Поиск в меню */
 
 .first-menu-container {
