@@ -829,9 +829,22 @@ body {
   display: block;
 }
 
+/* Логотип девайс в подвале */
 .footer-address svg {
   margin-top: 62px;
   margin-bottom: 35px;
+}
+
+.footer-address svg:hover {
+  opacity: 60%;
+}
+
+.footer-address svg:active {
+  opacity: 30%;
+}
+
+.footer-address svg:focus {
+  outline: 2px solid #af4fff;
 }
 
 .footer-address address {
