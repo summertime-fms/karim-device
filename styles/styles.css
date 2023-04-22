@@ -376,6 +376,18 @@ body {
   margin-top: 20px;
 }
 
+.gallery-description-link:hover {
+  background-color: #ffe17f;
+}
+
+.gallery-description-link:active {
+  background-color: #ffcc33;
+}
+
+.gallery-description-link:focus {
+  outline: 2px solid #af4fff;
+}
+
 /* Для кнопок */
 .button-yellow {
   padding: 16px 0;
@@ -554,6 +566,18 @@ body {
   bottom: 9px;
 }
 
+.advantages-button-2:hover {
+  background-color: #ffe17f;
+}
+
+.advantages-button-2:active {
+  background-color: #ffcc33;
+}
+
+.advantages-button-2:focus {
+  outline: 2px solid #af4fff;
+}
+
 .advantages-button-3::after {
   content: "Кредит";
   font-family: "raleway", sans-serif;
@@ -565,6 +589,18 @@ body {
   position: absolute;
   left: 37px;
   bottom: 9px;
+}
+
+.advantages-button-3:hover {
+  background-color: #ffe17f;
+}
+
+.advantages-button-3:active {
+  background-color: #ffcc33;
+}
+
+.advantages-button-3:focus {
+  outline: 2px solid #af4fff;
 }
 
 .advantages-title {
@@ -690,6 +726,19 @@ body {
   width: 270px;
 }
 
+.about-us-button:hover {
+  background-color: #ffe17f;
+}
+
+.about-us-button:active {
+  background-color: #ffcc33;
+}
+
+.about-us-button:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: -1px;
+}
+
 .about-us-button::after {
   content: "Подробнее о нас";
   font-family: "raleway", sans-serif;
@@ -795,6 +844,19 @@ body {
   position: absolute;
   bottom: 9px;
   left: 40px;
+}
+
+.contacts-button:hover {
+  background-color: #ffe17f;
+}
+
+.contacts-button:active {
+  background-color: #ffcc33;
+}
+
+.contacts-button:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: -1px;
 }
 
 /* Рассылка */
@@ -1080,6 +1142,18 @@ body {
   position: absolute;
   bottom: 9px;
   left: 53px;
+}
+
+.button-filter:hover {
+  background-color: #ffe17f;
+}
+
+.button-filter:active {
+  background-color: #ffcc33;
+}
+
+.button-filter:focus {
+  outline: 2px solid #af4fff;
 }
 
 .catalog-right-column {
