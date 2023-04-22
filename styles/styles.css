@@ -942,7 +942,6 @@ body {
 }
 
 /* Подвал-адрес */
-
 .footer-address {
   width: 240px;
 }
@@ -995,50 +994,78 @@ body {
 
 .footer-menu-list {
   margin: 0;
-  margin-bottom: 62px;
   padding: 0;
-  padding-left: 25px;
   display: flex;
+  justify-content: space-between;
   list-style: none;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 2px;
 }
 
-.footer-menu-item:not(:last-child) {
-  margin-right: 35px;
-}
-
 .footer-menu-link {
   font-weight: 800;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-menu-link:hover {
+  color: #ffc700;
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ffc700;
+}
+
+.footer-menu-link:active {
+  color: #ffc700;
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ffc700;
+  opacity: 30%;
+}
+
+.footer-menu-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 /* Подвал социальные сети */
 .footer-social-list {
   margin: 0;
-  margin-bottom: 61px;
+  margin-left: 147px;
+  margin-top: 62px;
   padding: 0;
-  padding-left: 143px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-.footer-social-item {
-  margin-right: 15px;
-}
-
-.footer-social-item:nth-child(3n) {
-  margin-right: 0;
-}
-
 .footer-social-link {
+  margin-right: 15px;
   display: block;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
   width: 40px;
   height: 40px;
+}
+
+.footer-social-link:hover {
+  background-color: #ffc700;
+}
+
+.footer-social-link:active {
+  background-color: #ffc700;
+}
+
+.footer-social-link:active svg {
+  opacity: 30%;
+}
+
+.footer-social-link:focus {
+  outline: 2px solid #af4fff;
+}
+
+.footer-social-item:last-child .footer-social-link {
+  margin-right: 0;
 }
 
 .footer-social-link svg {
@@ -1052,16 +1079,42 @@ body {
   max-width: 180px;
 }
 
-.footer-contacts-phone svg {
-  padding-left: 60px;
-}
-
 .footer-phone {
   display: block;
   margin-bottom: 63px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 20px;
+}
+
+.footer-phone:hover {
+  color: #ffc700;
+}
+
+.footer-phone:active {
+  color: #ffc700;
+  opacity: 30%;
+}
+
+.footer-phone:focus {
+  outline: 2px solid #af4fff;
+}
+
+.footer-htmlacademy-link {
+  margin-left: 60px;
+}
+
+.footer-htmlacademy-link:focus {
+  outline: 2px solid #af4fff;
+}
+
+.footer-htmlacademy-link:hover path {
+  fill: #ffffff;
+}
+
+.footer-htmlacademy-link:active path {
+  fill: #ffffff;
+  opacity: 30%;
 }
 
 /* Стили для каталога */
