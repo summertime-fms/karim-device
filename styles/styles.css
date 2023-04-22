@@ -1361,12 +1361,13 @@ body {
 
 /* Пагинация */
 .pagination-container {
-  padding: 25px;
   display: flex;
   background-color: #ebebeb;
 }
 
 .pagination-prev {
+  display: block;
+  padding: 25px;
   margin-right: auto;
   align-self: center;
   font-weight: 800;
@@ -1378,8 +1379,20 @@ body {
   opacity: 30%;
 }
 
+.pagination-prev:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-prev:active {
+  opacity: 30%;
+}
+
+.pagination-prev:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
 .pagination {
-  margin: 0;
+  margin: 15px 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -1400,6 +1413,10 @@ body {
   text-decoration: none;
 }
 
+.pagination-current:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
 .pagination-link {
   display: block;
   box-sizing: border-box;
@@ -1414,7 +1431,25 @@ body {
   text-decoration: none;
 }
 
+.pagination-item:last-child .pagination-link {
+  padding-left: 11px;
+}
+
+.pagination-link:hover {
+  opacity: 100%;
+}
+
+.pagination-link:active {
+  opacity: 30%;
+}
+
+.pagination-link:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
 .pagination-next {
+  display: block;
+  padding: 25px;
   margin-left: auto;
   align-self: center;
   font-weight: 800;
@@ -1423,4 +1458,16 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+.pagination-next:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-next:active {
+  opacity: 30%;
+}
+
+.pagination-next:focus-visible {
+  outline: 2px solid #af4fff;
 }
