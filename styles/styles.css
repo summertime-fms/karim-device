@@ -125,6 +125,18 @@ body {
   position: relative;
 }
 
+.sign-in-link:hover {
+  opacity: 60%;
+}
+
+.sign-in-link:active {
+  opacity: 30%;
+}
+
+.sign-in-link:focus {
+  outline: 2px solid #af4fff;
+}
+
 .sign-in-item + .sign-in-item {
   margin-left: 28px;
 }
@@ -174,6 +186,18 @@ body {
   position: relative;
 }
 
+.user-menu-link:hover {
+  opacity: 60%;
+}
+
+.user-menu-link:active {
+  opacity: 30%;
+}
+
+.user-menu-link:focus {
+  outline: 2px solid #af4fff;
+}
+
 .user-menu-link span {
   padding-left: 22px;
 }
@@ -210,6 +234,18 @@ body {
   height: 50px;
   text-decoration: none;
   position: relative;
+}
+
+.toggler-link:hover .toggler-icon {
+  opacity: 100%;
+}
+
+.toggler-link:active .toggler-icon {
+  opacity: 100%;
+}
+
+.toggler-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 .toggler-name {
@@ -274,6 +310,18 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation-link:hover {
+  opacity: 60%;
+}
+
+.navigation-link:active {
+  opacity: 30%;
+}
+
+.navigation-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 /* Галерея товаров */
