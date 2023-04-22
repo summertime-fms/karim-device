@@ -1168,9 +1168,21 @@ body {
   left: 143px;
 }
 
-.breadcrumbs-link:first-child {
+.breadcrumbs-link {
   text-decoration: none;
   color: #000000;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-link:active {
+  opacity: 30%;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 /* Фильтр каталога */
