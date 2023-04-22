@@ -88,7 +88,7 @@ body {
   opacity: 30%;
 }
 
-.header-logo img:focus {
+.header-logo img:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -133,7 +133,7 @@ body {
   opacity: 30%;
 }
 
-.sign-in-link:focus {
+.sign-in-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -194,7 +194,7 @@ body {
   opacity: 30%;
 }
 
-.user-menu-link:focus {
+.user-menu-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -244,7 +244,7 @@ body {
   opacity: 100%;
 }
 
-.toggler-link:focus {
+.toggler-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -320,7 +320,7 @@ body {
   opacity: 30%;
 }
 
-.navigation-link:focus {
+.navigation-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -384,7 +384,7 @@ body {
   background-color: #ffcc33;
 }
 
-.gallery-description-link:focus {
+.gallery-description-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -504,7 +504,7 @@ body {
   opacity: 0.3;
 }
 
-.category-link:focus {
+.category-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -586,7 +586,7 @@ body {
   background-color: #ffcc33;
 }
 
-.advantages-button-2:focus {
+.advantages-button-2:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -611,7 +611,7 @@ body {
   background-color: #ffcc33;
 }
 
-.advantages-button-3:focus {
+.advantages-button-3:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -643,6 +643,15 @@ body {
   display: flex;
   background-color: #f0f0f0;
   justify-content: space-between;
+  height: 100px;
+}
+
+.delivery-link {
+  display: block;
+  margin: 0 auto;
+  width: 1160px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .background-truck {
@@ -652,7 +661,7 @@ body {
 }
 
 .background-truck svg {
-  padding: 35px 39px 34px;
+  padding: 34px 39px;
 }
 
 .delivery-title {
@@ -663,10 +672,40 @@ body {
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-.background-exclamation-point svg {
-  padding: 30px 42px;
+.i-container {
+  width: 125px;
+  height: 100px;
+}
+
+.i-subcontainer {
+  margin: 30px 42px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
+}
+
+.i-icon {
+  margin: 14px 19px;
+}
+
+.delivery-link:hover .background-truck {
+  background-color: #ffc700;
+}
+
+.delivery-link:hover .i-icon g {
+  opacity: 100%;
+}
+
+.delivery-link:active .delivery-container {
+  opacity: 30%;
+}
+
+.delivery-link:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 /* О нас */
@@ -725,15 +764,6 @@ body {
   color: #000000;
 }
 
-/* .about-us-button {
-  font-weight: 800;
-  line-height: 21px;
-  color: #000000;
-  letter-spacing: 3px;
-  text-decoration: none;
-  background-color: #ffe17f;
-} */
-
 .about-us-yellow-button {
   width: 270px;
 }
@@ -746,7 +776,7 @@ body {
   background-color: #ffcc33;
 }
 
-.about-us-button:focus {
+.about-us-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: -1px;
 }
@@ -830,15 +860,6 @@ body {
   line-height: 30px;
 }
 
-/* .contacts-button {
-  font-weight: 800;
-  line-height: 21px;
-  color: #000000;
-  letter-spacing: 3px;
-  text-decoration: none;
-  background-color: #ffe17f;
-} */
-
 .contacts-yellow-button {
   width: 259px;
 }
@@ -866,7 +887,7 @@ body {
   background-color: #ffcc33;
 }
 
-.contacts-button:focus {
+.contacts-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: -1px;
 }
@@ -964,7 +985,7 @@ body {
   opacity: 30%;
 }
 
-.footer-address svg:focus {
+.footer-address svg:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -1024,7 +1045,7 @@ body {
   opacity: 30%;
 }
 
-.footer-menu-link:focus {
+.footer-menu-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -1060,7 +1081,7 @@ body {
   opacity: 30%;
 }
 
-.footer-social-link:focus {
+.footer-social-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -1096,7 +1117,7 @@ body {
   opacity: 30%;
 }
 
-.footer-phone:focus {
+.footer-phone:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -1104,7 +1125,7 @@ body {
   margin-left: 60px;
 }
 
-.footer-htmlacademy-link:focus {
+.footer-htmlacademy-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -1181,7 +1202,7 @@ body {
   opacity: 30%;
 }
 
-.breadcrumbs-link:focus {
+.breadcrumbs-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -1229,7 +1250,7 @@ body {
   background-color: #ffcc33;
 }
 
-.button-filter:focus {
+.button-filter:focus-visible {
   outline: 2px solid #af4fff;
 }
 
