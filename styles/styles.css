@@ -221,13 +221,6 @@ body {
   align-items: center;
 }
 
-/* .toggler-button {
-  margin: 0;
-  display: flex;
-  width: 293px;
-  height: 50px;
-} */
-
 .toggler-link {
   display: block;
   width: 293px;
@@ -373,11 +366,30 @@ body {
 }
 
 .gallery-description-link {
-  margin-top: 20px;
+  padding: 10px 38px;
+  position: relative;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button-yellow::before {
+  content: "";
+  background-color: #ffe17f;
+  width: 99%;
+  height: 100%;
+  transform: translateX(-38px) translateY(-10px) scaleY(0.2);
+  position: absolute;
+  z-index: -1;
 }
 
 .gallery-description-link:hover {
   background-color: #ffe17f;
+  transition: ease-in-out 0.3s;
 }
 
 .gallery-description-link:active {
@@ -386,32 +398,6 @@ body {
 
 .gallery-description-link:focus-visible {
   outline: 2px solid #af4fff;
-}
-
-/* Для кнопок */
-.button-yellow {
-  padding: 16px 0;
-  display: inline-block;
-  position: relative;
-  border: none;
-  cursor: pointer;
-}
-
-.yellow-button-link {
-  width: 220px;
-  height: 8px;
-  background-color: #ffe17f;
-}
-
-.gallery-description-link::after {
-  content: "Подробнее";
-  position: absolute;
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  bottom: 9px;
-  left: 40px;
 }
 
 .distance-container {
@@ -537,10 +523,6 @@ body {
   margin-bottom: 35px;
 }
 
-.advantages-yellow-button {
-  width: 160px;
-}
-
 .advantages-button-current {
   padding: 10px 20px;
   padding-right: 130px;
@@ -565,17 +547,19 @@ body {
   background-color: #000000;
 }
 
-.advantages-button-2::after {
-  content: "Гарантия";
-  font-family: "raleway", sans-serif;
+.advantages-button-2,
+.advantages-button-3 {
+  padding: 10px 10px;
+  position: relative;
   font-weight: 800;
-  letter-spacing: 3px;
-  font-size: 18px;
   line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
   text-transform: uppercase;
-  position: absolute;
-  left: 22px;
-  bottom: 9px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .advantages-button-2:hover {
@@ -590,17 +574,8 @@ body {
   outline: 2px solid #af4fff;
 }
 
-.advantages-button-3::after {
-  content: "Кредит";
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  letter-spacing: 3px;
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-  position: absolute;
-  left: 37px;
-  bottom: 9px;
+.advantages-item:nth-child(3) .advantages-button-3 {
+  padding: 10px 26px;
 }
 
 .advantages-button-3:hover {
@@ -764,11 +739,19 @@ body {
   color: #000000;
 }
 
-.about-us-yellow-button {
-  width: 270px;
+.about-us-button {
+  padding: 10px 38px;
+  position: relative;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.about-us-button:hover {
+/* .about-us-button:hover {
   background-color: #ffe17f;
 }
 
@@ -779,22 +762,7 @@ body {
 .about-us-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: -1px;
-}
-
-.about-us-button::after {
-  content: "Подробнее о нас";
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  line-height: 21px;
-  letter-spacing: 3px;
-  text-decoration: none;
-  position: absolute;
-  bottom: 9px;
-  left: 28px;
-}
+} */
 
 /* Контакты */
 .contacts {
@@ -860,26 +828,21 @@ body {
   line-height: 30px;
 }
 
-.contacts-yellow-button {
-  width: 259px;
-}
-
-.contacts-button::after {
-  content: "Напишите нам";
-  font-family: "raleway", sans-serif;
+.contacts-button {
+  padding: 10px 38px;
+  position: relative;
   font-weight: 800;
-  font-size: 18px;
-  color: #000000;
-  text-transform: uppercase;
   line-height: 21px;
+  color: #000000;
   letter-spacing: 3px;
   text-decoration: none;
-  position: absolute;
-  bottom: 9px;
-  left: 40px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.contacts-button:hover {
+.yellow-button
+
+/* .contacts-button:hover {
   background-color: #ffe17f;
 }
 
@@ -890,7 +853,7 @@ body {
 .contacts-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: -1px;
-}
+} */
 
 /* Рассылка */
 .subscribe {
@@ -1227,22 +1190,7 @@ body {
   text-transform: uppercase;
 }
 
-.button-filter::after {
-  content: "Показать";
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  line-height: 21px;
-  letter-spacing: 3px;
-  text-decoration: none;
-  position: absolute;
-  bottom: 9px;
-  left: 53px;
-}
-
-.button-filter:hover {
+/* .button-filter:hover {
   background-color: #ffe17f;
 }
 
@@ -1252,7 +1200,7 @@ body {
 
 .button-filter:focus-visible {
   outline: 2px solid #af4fff;
-}
+} */
 
 .catalog-right-column {
   width: 840px;
