@@ -751,8 +751,9 @@ body {
   text-align: center;
 }
 
-/* .about-us-button:hover {
+.about-us-button:hover {
   background-color: #ffe17f;
+  transition: ease-in-out 0.2s;
 }
 
 .about-us-button:active {
@@ -762,7 +763,7 @@ body {
 .about-us-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: -1px;
-} */
+}
 
 /* Контакты */
 .contacts {
@@ -840,10 +841,9 @@ body {
   text-align: center;
 }
 
-.yellow-button
-
-/* .contacts-button:hover {
+.contacts-button:hover {
   background-color: #ffe17f;
+  transition: ease-in-out 0.2s;
 }
 
 .contacts-button:active {
@@ -853,7 +853,7 @@ body {
 .contacts-button:focus-visible {
   outline: 2px solid #af4fff;
   outline-offset: -1px;
-} */
+}
 
 /* Рассылка */
 .subscribe {
