@@ -962,13 +962,12 @@ body {
 
 .footer-device-link {
   display: block;
+  margin-top: 62px;
+  margin-bottom: 35px;
+  width: 145px;
 }
 
 /* Логотип девайс в подвале */
-.footer-address svg {
-  margin-top: 62px;
-  margin-bottom: 35px;
-}
 
 .footer-address svg:hover {
   opacity: 60%;
@@ -978,7 +977,7 @@ body {
   opacity: 30%;
 }
 
-.footer-address svg:focus-visible {
+.footer-address .footer-device-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -1352,6 +1351,19 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   background-color: #ffffff;
+}
+
+.product-show-more:hover {
+  border: 3px solid #000000;
+}
+
+.product-show-more:active {
+  border: 3px solid #000000;
+  opacity: 0.3;
+}
+
+.product-show-more:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 /* Пагинация */
