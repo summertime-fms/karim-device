@@ -366,37 +366,50 @@ body {
 }
 
 .gallery-description-link {
-  padding: 10px 38px;
-  position: relative;
-  font-weight: 800;
-  line-height: 21px;
+  display: flex;
+  width: 220px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
   color: #000000;
-  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
+  letter-spacing: 2.5px;
 }
 
-.button-yellow::before {
+/* Анимация кнопки */
+.button--animated {
+  position: relative;
+  z-index: 2;
+}
+
+.button--animated::after {
   content: "";
-  background-color: #ffe17f;
-  width: 99%;
+  display: block;
+  width: 100%;
   height: 100%;
-  transform: translateX(-38px) translateY(-10px) scaleY(0.2);
   position: absolute;
+
+  transition: transform 0.255s ease-in;
+  transform: scaleY(0.25);
+
+  background-color: #ffe17f;
   z-index: -1;
 }
 
-.gallery-description-link:hover {
-  background-color: #ffe17f;
-  transition: ease-in-out 0.3s;
+.button--animated:hover::after {
+  transform: scaleY(1);
 }
 
-.gallery-description-link:active {
-  background-color: #ffcc33;
+.button--animated:active::after {
+  background-color: #ffc700;
 }
 
-.gallery-description-link:focus-visible {
+.button--animated:focus-visible::after {
+  transform: scaleY(1);
+}
+
+.button--animated:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -547,43 +560,56 @@ body {
   background-color: #000000;
 }
 
-.advantages-button-2,
-.advantages-button-3 {
-  padding: 10px 10px;
-  position: relative;
+.advantages-button-2 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
   color: #000000;
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  border: none;
+  border: 0;
   cursor: pointer;
   font-size: 18px;
-}
-
-.advantages-button-2:hover {
-  background-color: #ffe17f;
+  background-color: transparent;
 }
 
 .advantages-button-2:active {
-  background-color: #ffcc33;
+  background-color: #ffc700;
 }
 
 .advantages-button-2:focus-visible {
   outline: 2px solid #af4fff;
 }
 
-.advantages-item:nth-child(3) .advantages-button-3 {
-  padding: 10px 26px;
-}
-
-.advantages-button-3:hover {
-  background-color: #ffe17f;
+.advantages-button-3 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 .advantages-button-3:active {
-  background-color: #ffcc33;
+  background-color: #ffc700;
 }
 
 .advantages-button-3:focus-visible {
@@ -740,20 +766,15 @@ body {
 }
 
 .about-us-button {
-  padding: 10px 38px;
-  position: relative;
-  font-weight: 800;
-  line-height: 21px;
+  display: flex;
+  width: 270px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
   color: #000000;
-  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
-}
-
-.about-us-button:hover {
-  background-color: #ffe17f;
-  transition: ease-in-out 0.2s;
+  letter-spacing: 2.5px;
 }
 
 .about-us-button:active {
@@ -764,6 +785,7 @@ body {
   outline: 2px solid #af4fff;
   outline-offset: -1px;
 }
+*/
 
 /* Контакты */
 .contacts {
@@ -843,24 +865,19 @@ body {
 }
 
 .contacts-button {
-  padding: 10px 38px;
-  position: relative;
-  font-weight: 800;
-  line-height: 21px;
+  display: flex;
+  width: 270px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
   color: #000000;
-  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
-}
-
-.contacts-button:hover {
-  background-color: #ffe17f;
-  transition: ease-in-out 0.2s;
+  letter-spacing: 2.5px;
 }
 
 .contacts-button:active {
-  background-color: #ffcc33;
+  background-color: #ffc700;
 }
 
 .contacts-button:focus-visible {
@@ -1204,17 +1221,33 @@ body {
   text-transform: uppercase;
 }
 
-/* .button-filter:hover {
-  background-color: #ffe17f;
+.button-filter {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 .button-filter:active {
-  background-color: #ffcc33;
+  background-color: #ffc700;
 }
 
 .button-filter:focus-visible {
   outline: 2px solid #af4fff;
-} */
+}
 
 .catalog-right-column {
   width: 840px;
