@@ -329,6 +329,10 @@ body {
   width: 560px;
 }
 
+.slider-image {
+  display: block;
+}
+
 .slider-button {
   width: 20px;
   height: 60px;
@@ -463,6 +467,48 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+}
+
+/* Индикатор слайдера */
+
+.indicators-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.indicators-item {
+  margin: 0 20px;
+}
+
+.indicators-button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.indicators-button:hover {
+  opacity: 60%;
+}
+
+.indicators-button:active {
+  opacity: 30%;
+}
+
+.indicators-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.indicators-button-current {
+  border: none;
+  background-color: #000000;
 }
 
 /* Список категорий товаров */
