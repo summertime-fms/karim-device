@@ -329,6 +329,34 @@ body {
   width: 560px;
 }
 
+.slider-button {
+  width: 20px;
+  height: 60px;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/slider-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-button:hover {
+  opacity: 60%;
+}
+
+.slider-button:active {
+  opacity: 30%;
+}
+
+.slider-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.slider-next {
+  transform: rotate(180deg);
+}
+
 /* Описание товаров */
 .description-number {
   position: absolute;
