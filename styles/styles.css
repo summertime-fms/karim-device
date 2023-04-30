@@ -1470,10 +1470,10 @@ body {
 }
 
 .range-input {
-  width: 20px;
+  width: 55px;
   padding: 0 2px;
   font: inherit;
-  text-align: center;
+  text-align: left;
   background-color: transparent;
   border: none;
   appearance: textfield;
