@@ -108,6 +108,61 @@ body {
   margin-right: 26px;
 }
 
+.search-menu {
+  padding: 10px 48px;
+  border: 2px solid #000000;
+  border-right: transparent;
+  border-radius: 50px 0 0 50px;
+  background-color: transparent;
+  width: 359px;
+
+  background-image: url("../images/search-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 12px;
+
+  font-family: "rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.search-menu::placeholder {
+  opacity: 0.5;
+}
+
+.search-menu:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+  border-right: 2px solid #000000;
+}
+
+.search-button {
+  padding: 10px 56px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  border-radius: 0 50px 50px 0;
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.search-button:hover {
+  color: #ffffff;
+  background-color: #000000;
+  border: 2px solid #000000;
+}
+
+.search-button:active {
+  opacity: 0.3;
+}
+
+.search-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 3px;
+}
+
 /* Войти */
 .sign-in-list {
   margin: 0;
@@ -221,13 +276,6 @@ body {
   align-items: center;
 }
 
-/* .toggler-button {
-  margin: 0;
-  display: flex;
-  width: 293px;
-  height: 50px;
-} */
-
 .toggler-link {
   display: block;
   width: 293px;
@@ -336,6 +384,47 @@ body {
   width: 560px;
 }
 
+.slider-image {
+  display: block;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-60px);
+}
+
+.slider-button {
+  width: 20px;
+  height: 60px;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/slider-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-button:hover {
+  opacity: 60%;
+}
+
+.slider-button:active {
+  opacity: 30%;
+}
+
+.slider-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.slider-next {
+  transform: rotate(180deg);
+}
+
 /* Описание товаров */
 .description-number {
   position: absolute;
@@ -373,45 +462,51 @@ body {
 }
 
 .gallery-description-link {
-  margin-top: 20px;
-}
-
-.gallery-description-link:hover {
-  background-color: #ffe17f;
-}
-
-.gallery-description-link:active {
-  background-color: #ffcc33;
-}
-
-.gallery-description-link:focus-visible {
-  outline: 2px solid #af4fff;
-}
-
-/* Для кнопок */
-.button-yellow {
-  padding: 16px 0;
-  display: inline-block;
-  position: relative;
-  border: none;
-  cursor: pointer;
-}
-
-.yellow-button-link {
+  display: flex;
   width: 220px;
-  height: 8px;
-  background-color: #ffe17f;
-}
-
-.gallery-description-link::after {
-  content: "Подробнее";
-  position: absolute;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  bottom: 9px;
-  left: 40px;
+  letter-spacing: 2.5px;
+}
+
+/* Анимация кнопки */
+.button--animated {
+  position: relative;
+  z-index: 2;
+}
+
+.button--animated::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  transition: transform 0.255s ease-in;
+  transform: scaleY(0.25);
+
+  background-color: #ffe17f;
+  z-index: -1;
+}
+
+.button--animated:hover::after {
+  transform: scaleY(1);
+}
+
+.button--animated:active::after {
+  background-color: #ffc700;
+}
+
+.button--animated:focus-visible::after {
+  transform: scaleY(1);
+}
+
+.button--animated:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 .distance-container {
@@ -436,6 +531,48 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+}
+
+/* Индикатор слайдера */
+
+.indicators-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.indicators-item {
+  margin: 0 20px;
+}
+
+.indicators-button {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.indicators-button:hover {
+  opacity: 60%;
+}
+
+.indicators-button:active {
+  opacity: 30%;
+}
+
+.indicators-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.indicators-button-current {
+  border: none;
+  background-color: #000000;
 }
 
 /* Список категорий товаров */
@@ -537,10 +674,6 @@ body {
   margin-bottom: 35px;
 }
 
-.advantages-yellow-button {
-  width: 160px;
-}
-
 .advantages-button-current {
   padding: 10px 20px;
   padding-right: 130px;
@@ -565,50 +698,56 @@ body {
   background-color: #000000;
 }
 
-.advantages-button-2::after {
-  content: "Гарантия";
+.advantages-button-2 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
   font-family: "raleway", sans-serif;
   font-weight: 800;
-  letter-spacing: 3px;
-  font-size: 18px;
   line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
   text-transform: uppercase;
-  position: absolute;
-  left: 22px;
-  bottom: 9px;
-}
-
-.advantages-button-2:hover {
-  background-color: #ffe17f;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 .advantages-button-2:active {
-  background-color: #ffcc33;
+  background-color: #ffc700;
 }
 
 .advantages-button-2:focus-visible {
   outline: 2px solid #af4fff;
 }
 
-.advantages-button-3::after {
-  content: "Кредит";
+.advantages-button-3 {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
   font-family: "raleway", sans-serif;
   font-weight: 800;
-  letter-spacing: 3px;
-  font-size: 18px;
   line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
   text-transform: uppercase;
-  position: absolute;
-  left: 37px;
-  bottom: 9px;
-}
-
-.advantages-button-3:hover {
-  background-color: #ffe17f;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 .advantages-button-3:active {
-  background-color: #ffcc33;
+  background-color: #ffc700;
 }
 
 .advantages-button-3:focus-visible {
@@ -712,6 +851,7 @@ body {
 .information-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .about-us {
@@ -764,12 +904,16 @@ body {
   color: #000000;
 }
 
-.about-us-yellow-button {
+.about-us-button {
+  display: flex;
   width: 270px;
-}
-
-.about-us-button:hover {
-  background-color: #ffe17f;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 .about-us-button:active {
@@ -780,21 +924,7 @@ body {
   outline: 2px solid #af4fff;
   outline-offset: -1px;
 }
-
-.about-us-button::after {
-  content: "Подробнее о нас";
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  line-height: 21px;
-  letter-spacing: 3px;
-  text-decoration: none;
-  position: absolute;
-  bottom: 9px;
-  left: 28px;
-}
+*/
 
 /* Контакты */
 .contacts {
@@ -849,6 +979,19 @@ body {
   color: #444444;
 }
 
+.contacts-phone:hover {
+  color: #ffc700;
+}
+
+.contacts-phone:active {
+  color: #ffc700;
+  opacity: 60%;
+}
+
+.contacts-phone:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
 .contacts-schedule {
   margin: 0;
   margin-bottom: 40px;
@@ -860,31 +1003,20 @@ body {
   line-height: 30px;
 }
 
-.contacts-yellow-button {
-  width: 259px;
-}
-
-.contacts-button::after {
-  content: "Напишите нам";
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
+.contacts-button {
+  display: flex;
+  width: 270px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
   color: #000000;
-  text-transform: uppercase;
-  line-height: 21px;
-  letter-spacing: 3px;
   text-decoration: none;
-  position: absolute;
-  bottom: 9px;
-  left: 40px;
-}
-
-.contacts-button:hover {
-  background-color: #ffe17f;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 .contacts-button:active {
-  background-color: #ffcc33;
+  background-color: #ffc700;
 }
 
 .contacts-button:focus-visible {
@@ -934,6 +1066,55 @@ body {
   display: flex;
 }
 
+.subscribe-field {
+  font-family: "rubik", sans-serif;
+  border: none;
+  padding: 11px 16px;
+  border-bottom: 3px solid #c4c4c4;
+  cursor: pointer;
+  width: 557px;
+  background-color: #f0f0f0;
+}
+
+.subscribe-field:focus-visible {
+  background-color: #dcdcdc;
+  outline: none;
+}
+
+.subscribe-field::placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.subscribe-button {
+  display: inline-block;
+  padding: 18px 39px;
+  letter-spacing: 2.5px;
+  border: 3px solid #c4c4c4;
+  text-align: center;
+  font-family: "raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  background-color: #f0f0f0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: 3px solid #000000;
+}
+
+.subscribe-button:active {
+  opacity: 30%;
+}
+
+.subscribe-button:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 1px;
+}
+
 .subscribe span {
   padding-top: 13px;
   padding-bottom: 13px;
@@ -969,13 +1150,12 @@ body {
 
 .footer-device-link {
   display: block;
+  margin-top: 62px;
+  margin-bottom: 35px;
+  width: 145px;
 }
 
 /* Логотип девайс в подвале */
-.footer-address svg {
-  margin-top: 62px;
-  margin-bottom: 35px;
-}
 
 .footer-address svg:hover {
   opacity: 60%;
@@ -985,7 +1165,7 @@ body {
   opacity: 30%;
 }
 
-.footer-address svg:focus-visible {
+.footer-address .footer-device-link:focus-visible {
   outline: 2px solid #af4fff;
 }
 
@@ -1025,6 +1205,9 @@ body {
 }
 
 .footer-menu-link {
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
@@ -1032,8 +1215,6 @@ body {
 
 .footer-menu-link:hover {
   color: #ffc700;
-  display: inline-block;
-  padding-bottom: 4px;
   border-bottom: 2px solid #ffc700;
 }
 
@@ -1227,27 +1408,105 @@ body {
   text-transform: uppercase;
 }
 
-.button-filter::after {
-  content: "Показать";
-  font-family: "raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  line-height: 21px;
-  letter-spacing: 3px;
-  text-decoration: none;
-  position: absolute;
-  bottom: 9px;
-  left: 53px;
+/* Стоимость товара, диапазон */
+.range-scale {
+  position: relative;
+  height: 2px;
+  margin-bottom: 11px;
+  background-color: #dcdcdc;
 }
 
-.button-filter:hover {
-  background-color: #ffe17f;
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000000;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  opacity: 60%;
+}
+
+.range-toggle:active {
+  background-color: #000000;
+}
+
+.range-toggle:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -9px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -9px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 68px;
+  opacity: 30%;
+  font-family: "rubik", sans-serif;
+}
+
+.catalog-filter-label:last-child {
+  margin-right: 0;
+}
+
+.range-input {
+  width: 20px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.button-filter {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 .button-filter:active {
-  background-color: #ffcc33;
+  background-color: #ffc700;
 }
 
 .button-filter:focus-visible {
@@ -1274,16 +1533,41 @@ body {
   letter-spacing: 3px;
 }
 
+.sorting-container-buttons {
+  display: flex;
+  width: 60px;
+  height: 30px;
+}
+
 .button-prev,
 .button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 20%;
   width: 30px;
   height: 30px;
   text-decoration: none;
 }
 
-.sorting-container svg {
-  padding: 10px;
-  opacity: 20%;
+.button-prev:focus-visible,
+.button-next:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.sorting-container-buttons .button-prev:hover,
+.button-next:hover {
+  opacity: 50%;
+}
+
+.sorting-container-buttons .button-prev:active,
+.sorting-container-buttons .button-next:active {
+  opacity: 100%;
+}
+
+.sorting-container-buttons .button-prev:focus-visible,
+.sorting-container-buttons .button-next:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 /* Различные товары */
@@ -1357,6 +1641,19 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   background-color: #ffffff;
+}
+
+.product-show-more:hover {
+  border: 3px solid #000000;
+}
+
+.product-show-more:active {
+  border: 3px solid #000000;
+  opacity: 0.3;
+}
+
+.product-show-more:focus-visible {
+  outline: 2px solid #af4fff;
 }
 
 /* Пагинация */

@@ -20,7 +20,7 @@
           </a>
           <!-- Поиск в меню -->
           <div class="first-menu-container">
-            <form class="form-menu">
+            <form class="form-menu" autocomplete="off">
               <input
                 class="search-menu"
                 type="search"
@@ -97,7 +97,7 @@
           </div>
           <!-- посмотреть еще товары -->
           <div class="second-menu-container">
-            <a class="toggler-link" href="#">
+            <a class="toggler-link" href="catalog.html">
               <span class="toggler-name">Каталог товаров</span>
               <svg
                 class="toggler-icon"
@@ -142,12 +142,14 @@
               height="560"
               alt="Квадрокоптер"
             />
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущее фото</span>
-            </button>
-            <button class="slider-button slider-next">
-              <span class="visually-hidden">Следуюшее фото</span>
-            </button>
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next">
+                <span class="visually-hidden">Следуюшее фото</span>
+              </button>
+            </div>
           </div>
 
           <!-- Описание товаров -->
@@ -163,9 +165,9 @@
                 мощным лазером, замаскированный под стандартную камеру.
               </dd>
             </dl>
-            <a class="button-yellow gallery-description-link" href="#"
-              ><div class="yellow-button-link"></div
-            ></a>
+            <a class="gallery-description-link button--animated" href="#"
+              ><span>Подробнее</span></a
+            >
             <div class="distance-container">
               <dl>
                 <dt class="distance-title">800 м</dt>
@@ -430,19 +432,26 @@
           <ul class="advantages-list">
             <li class="advantages-item">
               <button
-                class="button-yellow advantages-button-1 advantages-button-current"
+                class="advantages-button-1 advantages-button-current"
+                type="button"
               >
                 Доставка
               </button>
             </li>
             <li class="advantages-item">
-              <button class="button-yellow advantages-button-2">
-                <div class="yellow-button-link advantages-yellow-button"></div>
+              <button
+                class="advantages-button-2 button--animated"
+                type="button"
+              >
+                Гарантия
               </button>
             </li>
             <li class="advantages-item">
-              <button class="button-yellow advantages-button-3">
-                <div class="yellow-button-link advantages-yellow-button"></div>
+              <button
+                class="advantages-button-3 button--animated"
+                type="button"
+              >
+                Кредит
               </button>
             </li>
           </ul>
@@ -515,7 +524,6 @@
         </div>
       </section>
       <!-- Редкий товар под заказ -->
-
       <div class="delivery">
         <a class="delivery-link" href="#">
           <div class="delivery-container">
@@ -591,9 +599,9 @@
             <li><span>СДИК</span></li>
             <li><span>ТоксБерри</span></li>
           </ul>
-          <a class="button-yellow about-us-button" href="#"
-            ><div class="yellow-button-link about-us-yellow-button"></div
-          ></a>
+          <a class="about-us-button button--animated" href="#">
+            Подробнее о нас
+          </a>
         </section>
 
         <!-- Контакты -->
@@ -618,9 +626,7 @@
             <li class="contacts-schedule-item">пн-пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб-вс: с 10:00 до 19:00</li>
           </ul>
-          <a class="button-yellow contacts-button" href="#"
-            ><div class="yellow-button-link contacts-yellow-button"></div
-          ></a>
+          <a class="contacts-button button--animated" href="#">Напишите нам</a>
         </section>
       </div>
       <!-- Рассылка -->
@@ -642,6 +648,7 @@
               method="post"
             >
               <input
+                class="subscribe-field"
                 type="email"
                 name="subscribe-email"
                 placeholder="Ваш e-mail"
