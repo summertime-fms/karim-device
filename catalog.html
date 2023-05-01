@@ -210,7 +210,6 @@
             >
               <fieldset class="filter-group">
                 <legend class="filter-group-title">Стоимость</legend>
-
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 0px; width: 119px">
@@ -252,53 +251,62 @@
 
               <fieldset class="filter-group">
                 <legend class="filter-group-title">Цвет</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
+                <ul class="filter-color-list">
+                  <li class="filter-color-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="black"
                         checked
                       />
-                      Черный
+                      <span class="control-mark"></span>
+                      <span class="control-label">Черный</span>
                     </label>
                   </li>
-                  <li class="filter-item">
+                  <li class="filter-color-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="white"
                         checked
                       />
-                      Белый
+                      <span class="control-mark"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
-                  <li class="filter-item">
+                  <li class="filter-color-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="blue"
                       />
-                      Синий
+                      <span class="control-mark"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
-                  <li class="filter-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="red" />
-                      Красный
-                    </label>
-                  </li>
-                  <li class="filter-item">
+                  <li class="filter-color-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
+                        type="checkbox"
+                        name="red"
+                      />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Красный</span>
+                    </label>
+                  </li>
+                  <li class="filter-color-item">
+                    <label class="control">
+                      <input
+                        class="visually-hidden control-input"
                         type="checkbox"
                         name="pink"
                       />
-                      Розовый
+                      <span class="control-mark"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
@@ -306,26 +314,28 @@
 
               <fieldset class="filter-group">
                 <legend class="filter-group-title">Bluetooth</legend>
-                <ul class="filter-list">
-                  <li class="filter-item">
+                <ul class="filter-bluetooth-list">
+                  <li class="filter-bluetooth-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="bluetooth"
                         checked
                       />
-                      Есть
+                      <span class="control-switch"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                   </li>
-                  <li class="filter-item">
+                  <li class="filter-bluetooth-item">
                     <label class="control">
                       <input
-                        class="control-input"
+                        class="visually-hidden control-input"
                         type="radio"
                         name="bluetooth"
                       />
-                      Нет
+                      <span class="control-switch"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
@@ -340,11 +350,13 @@
           <div class="catalog-right-column">
             <div class="sorting-container">
               <h2 class="sorting-title">Сортировка:</h2>
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярные</option>
-                <option value="cheap">Дешевые</option>
-                <option value="expensive">Дорогие</option>
-              </select>
+              <div class="select sorting-type">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">Популярные</option>
+                  <option value="cheap">Дешевые</option>
+                  <option value="expensive">Дорогие</option>
+                </select>
+              </div>
 
               <div class="sorting-container-buttons">
                 <a class="button-prev" href="#">

@@ -1401,6 +1401,8 @@ body {
 }
 
 .filter-title {
+  margin-top: 25px;
+  margin-bottom: 60px;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -1408,9 +1410,24 @@ body {
   text-transform: uppercase;
 }
 
+.filter-group {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  border: none;
+}
+
+.filter-group-title {
+  margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 2px solid #000000;
+  width: 200px;
+}
+
 /* Стоимость товара, диапазон */
 .range-scale {
   position: relative;
+  width: 200px;
   height: 2px;
   margin-bottom: 11px;
   background-color: #dcdcdc;
@@ -1479,10 +1496,83 @@ body {
   appearance: textfield;
 }
 
+.range-input:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+}
+
+/* Цвет в фильтре */
+.filter-color-list,
+.filter-bluetooth-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+
+.control:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.filter-color-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.control-mark {
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 3px solid #cccccc;
+}
+
+.control-label {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/black-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #000000;
+}
+
+/* bluetooth Фильтр */
+.filter-bluetooth-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.control-switch {
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+}
+
+.control-input[type="radio"]:checked + .control-switch {
+  border-color: #000000;
+  background-image: url("../images/radio-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-filter {
@@ -1531,6 +1621,29 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+/* список в сортировке */
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 141px;
+}
+
+.select-control {
+  width: 100%;
+  border: none;
+  padding-right: 32px;
+  font-family: "rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: transparent;
+  appearance: none;
+
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
 }
 
 .sorting-container-buttons {
