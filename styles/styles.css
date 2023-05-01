@@ -93,7 +93,6 @@ body {
 }
 
 /* Поиск в меню */
-
 .first-menu-container {
   margin-top: 46px;
   margin-bottom: 30px;
@@ -268,12 +267,17 @@ body {
 }
 
 /* Посмотреть ещё товары */
-
 .second-menu-container {
   display: flex;
   margin-bottom: 20px;
   height: 50px;
   align-items: center;
+}
+
+.toggler-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .toggler-link {
@@ -326,6 +330,71 @@ body {
   right: 0;
 }
 
+/* подменю */
+.toggler-list {
+  z-index: 2;
+  position: relative;
+}
+
+.submenu-wrapper {
+  display: none;
+}
+
+.toggler-item:focus-within .submenu-wrapper {
+  display: flex;
+  padding: 33px 60px 27px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 30px;
+  left: -60px;
+  width: 1160px;
+  height: 180px;
+  background-color: #ffe17f;
+  z-index: -1;
+}
+
+.submenu-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.submenu-list:first-child {
+  width: 222px;
+  margin-right: 30px;
+}
+
+.submenu-list:nth-child(2) {
+  width: 211px;
+  margin-right: 1px;
+}
+
+.submenu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.submenu-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.submenu-item:hover .submenu-link {
+  opacity: 60%;
+}
+
+.submenu-item:active .submenu-link {
+  opacity: 30%;
+}
+
+.submenu-item:focus-visible .submenu-link {
+  outline: 2px solid #af4fff;
+}
+
 /* Меню навигации */
 .navigation-menu {
   margin: 0;
@@ -333,6 +402,8 @@ body {
   margin-left: auto;
   display: flex;
   list-style: none;
+  position: relative;
+  z-index: 2;
 }
 
 .navigation-item:not(:last-child) {
