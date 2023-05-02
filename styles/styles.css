@@ -280,7 +280,7 @@ body {
 }
 
 .popover-open {
-  display: block;
+  display: none;
 }
 
 .popover-arrow {
@@ -1561,6 +1561,225 @@ body {
 .footer-htmlacademy-link:active path {
   fill: #ffffff;
   opacity: 30%;
+}
+
+/* Модальное окно */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+  z-index: 5;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.modal-delivery {
+  width: 920px;
+  height: 568px;
+  border: 10px solid #000000;
+  padding: 72px 80px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 42px;
+  font: inherit;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 84px;
+  right: 80px;
+
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  width: 26px;
+  height: 26px;
+}
+
+.modal-close-button:hover {
+  opacity: 60%;
+}
+
+.modal-close-button:active {
+  opacity: 30%;
+}
+
+.modal-wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.field-group {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.modal-control {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.modal-input {
+  position: relative;
+  padding: 20px;
+  border: none;
+  box-sizing: border-box;
+  width: 360px;
+  height: 60px;
+  background-color: #f0f0f0;
+}
+
+.modal-input::placeholder {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-wrapper-inputs .field-group:first-child .modal-input {
+  background-image: url("../images/vector-head.svg");
+  background-repeat: no-repeat;
+  background-position: right 21px center;
+}
+
+.modal-wrapper-inputs .field-group:last-child .modal-input {
+  background-image: url("../images/message-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  border: 2px solid rgba(255, 61, 61, 1);
+}
+
+.modal-text-name {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal-text-mail {
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(255, 61, 61, 1);
+}
+
+.modal-wrapper-import {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.modal-wrapper-import .modal-input {
+  width: 540px;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.amount-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.amount-container {
+  display: flex;
+}
+
+.amount-control {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.amount-symbol {
+  background-color: #ffe17f;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-left: 8px;
+  position: relative;
+  top: -3px;
+}
+
+.amount-symbol svg {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+}
+
+.amount-button {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.amount-button-add {
+  background-image: url("../images/amount-add.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.amount-button-put-away {
+  background-image: url("../images/amount-put-away.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.amount-input {
+  padding: 20px 25px;
+  box-sizing: border-box;
+  border: none;
+  width: 60px;
+  height: 60px;
+  background-color: #f0f0f0;
+
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.amount-input::-webkit-outer-spin-button,
+.amount-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.modal-button-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 /* Стили для каталога */
