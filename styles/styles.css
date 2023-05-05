@@ -1547,6 +1547,10 @@ body {
 }
 
 .footer-social-link:focus-visible {
+  outline: none;
+}
+
+.footer-social-link:focus-visible svg {
   outline: 2px solid #af4fff;
 }
 
