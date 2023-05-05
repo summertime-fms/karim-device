@@ -1666,7 +1666,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: flex;
 }
 
 .modal {
@@ -1788,13 +1788,9 @@ body {
   outline-offset: 2px;
 }
 
-/* .modal-wrapper-inputs .field-group:last-child .modal-input:invalid {
-  outline: 2px solid #ff3d3d;
+.modal-wrapper-inputs .field-group:last-child .modal-input:invalid {
+  border: 2px solid #ff3d3d;
 }
-
-.modal-text-mail:invalid {
-  color: #ff3d3d;
-} */
 
 .modal-text-name {
   font-family: "rubik", sans-serif;
@@ -1806,7 +1802,12 @@ body {
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  color: #ff3d3d;
 }
+
+/* .modal-text-mail:invalid {
+  color: #ff3d3d;
+} */
 
 .modal-wrapper-import {
   display: flex;
