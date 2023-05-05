@@ -1632,7 +1632,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: block;
 }
 
 .modal {
@@ -1735,11 +1735,32 @@ body {
 }
 
 .modal-wrapper-inputs .field-group:last-child .modal-input {
+  background-color: #ebebeb;
   background-image: url("../images/message-icon.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  border: 2px solid rgba(255, 61, 61, 1);
 }
+
+.modal-wrapper-inputs .field-group:last-child .modal-input:placeholder-shown {
+  background-color: #f0f0f0;
+}
+
+.modal-wrapper-inputs .field-group:last-child .modal-input:hover {
+  background-color: #dcdcdc;
+}
+
+.modal-wrapper-inputs .field-group:last-child .modal-input:focus-visible {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+/* .modal-wrapper-inputs .field-group:last-child .modal-input:invalid {
+  outline: 2px solid #ff3d3d;
+}
+
+.modal-text-mail:invalid {
+  color: #ff3d3d;
+} */
 
 .modal-text-name {
   font-family: "rubik", sans-serif;
@@ -1751,7 +1772,6 @@ body {
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: rgba(255, 61, 61, 1);
 }
 
 .modal-wrapper-import {
