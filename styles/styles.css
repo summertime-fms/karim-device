@@ -966,8 +966,10 @@ body {
 }
 
 .advantages-button-current {
-  padding: 10px 20px;
-  padding-right: 130px;
+  padding: 0;
+  display: block;
+  width: 280px;
+  height: 41px;
   border: none;
   cursor: pointer;
   background-color: #000000;
@@ -979,6 +981,22 @@ body {
   letter-spacing: 3px;
   text-transform: uppercase;
   transition: transform 0.255s ease-in-out;
+  position: relative;
+}
+
+.advantages-button-current span {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  transition: transform 0.255s ease-in-out;
+}
+
+.advantages-button-current:hover span {
+  transform: translateX(30px);
+}
+
+.advantages-button-current:focus-visible span {
+  transform: translateX(30px);
 }
 
 /* .advantages-button-current:hover {
@@ -2388,6 +2406,11 @@ body {
   grid-column-end: -1;
   grid-row-start: 1;
   grid-row-end: 2;
+}
+
+.overlay--product:focus-within {
+  outline: 2px solid #af4fff;
+  opacity: 0.8;
 }
 
 .product-image {
