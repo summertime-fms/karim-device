@@ -646,13 +646,17 @@ body {
 /* Галерея товаров */
 .gallery {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 70px;
+  position: relative;
 }
 
 .gallery-image {
   position: relative;
   bottom: 150px;
   width: 560px;
+  height: 401px;
 }
 
 .slider-image {
@@ -665,7 +669,6 @@ body {
   position: absolute;
   top: 50%;
   width: 100%;
-  transform: translateY(-60px);
 }
 
 .slider-button {
@@ -710,6 +713,7 @@ body {
 .gallery-description {
   bottom: 30px;
   width: 560px;
+  height: 401px;
 }
 
 .gallery-description dl {
@@ -805,6 +809,12 @@ body {
 }
 
 /* Индикатор слайдера */
+.indicators--wrapper {
+  display: flex;
+  width: 1160px;
+  justify-content: center;
+}
+
 .indicators-list {
   display: flex;
   flex-wrap: wrap;
@@ -812,6 +822,8 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: absolute;
+  bottom: 26px;
 }
 
 .indicators-item {
