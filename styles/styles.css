@@ -1893,16 +1893,20 @@ body {
   cursor: pointer;
 }
 
-.amount-button-add {
-  background-image: url("../images/amount-add.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.amount-button:hover svg {
+  opacity: 60%;
 }
 
-.amount-button-put-away {
-  background-image: url("../images/amount-put-away.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.amount-button:active svg {
+  opacity: 60%;
+}
+
+.amount-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+.amount-button:disabled {
+  opacity: 30%;
 }
 
 .amount-input {
@@ -1923,6 +1927,10 @@ body {
   appearance: none;
   margin: 0;
 }
+
+/* .amount-input:focus-visible {
+  border: 2px solid #af4fff;
+} */
 
 .modal-button-submit {
   display: flex;
@@ -2013,6 +2021,7 @@ body {
 
 .breadcrumbs-link:focus-visible {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 /* Фильтр каталога */
