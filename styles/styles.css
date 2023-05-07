@@ -2423,8 +2423,7 @@ body {
   grid-row-end: 2;
 }
 
-.overlay--product:focus-within {
-  outline: 2px solid #af4fff;
+.product-link .overlay--product:focus-within {
   opacity: 0.8;
 }
 
