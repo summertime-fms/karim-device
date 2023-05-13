@@ -1666,7 +1666,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: flex;
 }
 
 .modal {
@@ -1859,7 +1859,11 @@ body {
   display: none;
 }
 
-.amount--subtext:hover .amount-note {
+.amount-symbol:hover + .amount-note {
+  display: block;
+}
+
+.amount-symbol:focus-visible + .amount-note {
   display: block;
 }
 
