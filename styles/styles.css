@@ -1666,7 +1666,7 @@ body {
 }
 
 .modal-container-close {
-  display: flex;
+  display: none;
 }
 
 .modal {
@@ -2237,6 +2237,16 @@ body {
   background-image: url("../images/radio-circle.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.control-input:focus-visible + .control-mark {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.control-input:focus-visible + .control-switch {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .button-filter {
