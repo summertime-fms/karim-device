@@ -1644,6 +1644,7 @@ body {
 
 .footer-htmlacademy-link {
   margin-left: 60px;
+  display: block;
 }
 
 .footer-htmlacademy-link:focus-visible {
