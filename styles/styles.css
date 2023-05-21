@@ -474,6 +474,7 @@ body {
   margin-bottom: 20px;
   height: 50px;
   align-items: center;
+  min-height: 50px;
 }
 
 .toggler-list {
@@ -607,15 +608,21 @@ body {
 .navigation-menu {
   margin: 0;
   padding: 0;
-  margin-left: auto;
+  margin-left: 274px;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   position: relative;
   z-index: 2;
+  width: 474px;
 }
 
-.navigation-item:not(:last-child) {
-  margin-right: 56px;
+.navigation-item:first-child {
+  margin-right: 51px;
+}
+
+.navigation-item:nth-child(2) {
+  margin-right: 53px;
 }
 
 .sign-in-link,
@@ -715,8 +722,8 @@ body {
 /* Описание товаров */
 .description-number {
   position: absolute;
-  top: 277px;
-  left: 1075px;
+  top: -60px;
+  right: 50px;
   font-family: "rubik", sans-serif;
   font-size: 180px;
   font-weight: 700;
@@ -2215,16 +2222,6 @@ body {
   z-index: 2;
 }
 
-/* .control-mark::before {
-  content: "";
-  display: block;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  top: -4px;
-  left: -3px;
-} */
-
 .control-label {
   font-family: "rubik", sans-serif;
   font-weight: 400;
@@ -2559,7 +2556,11 @@ body {
 /* кнопка показать еще */
 .product-show-more {
   margin-bottom: 44px;
-  padding: 18px 294px;
+  display: flex;
+  width: 760px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
   border: 3px solid #e5e5e5;
   font-family: "raleway", sans-serif;
   font-size: 16px;
