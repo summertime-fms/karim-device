@@ -64,7 +64,7 @@ body {
 }
 
 .main-header {
-  height: 300px;
+  min-height: 300px;
 }
 
 .navigation {
@@ -73,6 +73,7 @@ body {
   flex-direction: column;
   width: 1040px;
   flex-wrap: wrap;
+  min-height: 300px;
 }
 
 .header-logo {
@@ -472,7 +473,6 @@ body {
 .second-menu-container {
   display: flex;
   margin-bottom: 20px;
-  height: 50px;
   align-items: center;
   min-height: 50px;
 }
@@ -615,14 +615,23 @@ body {
   position: relative;
   z-index: 2;
   width: 474px;
+  min-height: 20px;
 }
 
-.navigation-item:first-child {
+.navigation-item {
+  margin-bottom: 8px;
+}
+
+.navigation-item:nth-child(1n) {
   margin-right: 51px;
 }
 
-.navigation-item:nth-child(2) {
+.navigation-item:nth-child(2n) {
   margin-right: 53px;
+}
+
+.navigation-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .sign-in-link,
