@@ -1415,6 +1415,8 @@ body {
   cursor: pointer;
   width: 557px;
   background-color: #f0f0f0;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .subscribe-field:focus-visible {
@@ -1549,11 +1551,20 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 2px;
+}
+
+.footer-menu-item {
+  margin-right: 45px;
+  margin-bottom: 10px;
+}
+
+.footer-menu-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-menu-link {
@@ -1584,22 +1595,31 @@ body {
 
 /* Подвал социальные сети */
 .footer-social-list {
-  margin: 0;
-  margin-left: 147px;
-  margin-top: 62px;
+  margin: 62px 147px 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  min-height: 40px;
 }
 
 .footer-social-link {
   margin-right: 15px;
+  margin-bottom: 10px;
   display: block;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
   width: 40px;
   height: 40px;
+}
+
+.footer-social-item:nth-child(1n) .footer-social-link,
+.footer-social-item:nth-child(2n) .footer-social-link {
+  margin-right: 15px;
+}
+
+.footer-social-item:nth-child(3n) .footer-social-link {
+  margin-right: 0;
 }
 
 .footer-social-link:hover {
