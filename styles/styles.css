@@ -73,7 +73,7 @@ body {
   flex-direction: column;
   width: 1040px;
   flex-wrap: wrap;
-  min-height: 300px;
+  min-height: 186px;
 }
 
 .header-logo {
@@ -2459,10 +2459,11 @@ body {
 .product-link {
   display: grid;
   position: relative;
-  grid-template-rows: 380px 32px 40px;
-  grid-template-columns: 226px 134px;
+  grid-template-rows: 380px min-content;
+  grid-template-columns: 246px 114px;
+  row-gap: 32px;
   width: 360px;
-  height: 452px;
+  min-height: 452px;
   text-decoration: none;
 }
 
@@ -2541,7 +2542,7 @@ body {
   display: grid;
   max-width: 224px;
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
   font-family: "rubik", sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
@@ -2566,7 +2567,7 @@ body {
   line-height: 21px;
   color: #444444;
   grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
   justify-self: end;
   opacity: 1;
   pointer-events: none;
