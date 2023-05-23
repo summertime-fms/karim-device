@@ -575,7 +575,7 @@ body {
   top: 30px;
   left: -60px;
   width: 1160px;
-  height: 180px;
+  min-height: 180px;
   background-color: #ffe17f;
   z-index: -1;
 }
