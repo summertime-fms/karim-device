@@ -1123,6 +1123,12 @@ body {
   outline: 2px solid #af4fff;
 }
 
+.advantages-description {
+  width: 568px;
+  position: relative;
+  bottom: -17px;
+}
+
 .advantages-title {
   margin: 0;
   margin-bottom: 34px;
