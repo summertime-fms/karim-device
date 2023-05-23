@@ -987,13 +987,17 @@ body {
 .advantages {
   background-color: #f0f0f0;
   margin-bottom: 70px;
-  height: 289px;
+  min-height: 289px;
 }
 
 .advantages-container {
   display: flex;
   position: relative;
   bottom: 47px;
+
+  background-image: url("../images/stickman.svg");
+  background-repeat: no-repeat;
+  background-position: 95% 22px;
 }
 
 .advantages-list {
@@ -1137,10 +1141,10 @@ body {
   color: #444444;
 }
 
-.advantages-container svg {
+/* .advantages-container svg {
   margin-left: 106px;
   margin-top: 25px;
-}
+} */
 
 /* Редкий товар под заказ */
 .delivery-container {
