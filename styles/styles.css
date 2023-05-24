@@ -291,6 +291,21 @@ body {
   padding-left: 25px;
 }
 
+.user-menu-item:last-child span::before {
+  content: "2";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 21px;
+  height: 21px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: -16px;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
 .user-menu-link .user-menu-icon {
   right: auto;
   left: 0;
