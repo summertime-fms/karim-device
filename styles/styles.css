@@ -806,14 +806,23 @@ body {
 
 .gallery-description-link {
   display: flex;
+  flex-direction: column;
   width: 220px;
-  height: 40px;
+  min-height: 40px;
   justify-content: center;
   align-items: center;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  padding: 0;
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 3px;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 /* Анимация кнопки */
@@ -1085,10 +1094,11 @@ body {
 .advantages-button-2 {
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 160px;
-  height: 40px;
+  min-height: 40px;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -1113,10 +1123,11 @@ body {
 .advantages-button-3 {
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 160px;
-  height: 40px;
+  min-height: 40px;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -1297,14 +1308,24 @@ body {
 
 .about-us-button {
   display: flex;
+  flex-direction: column;
   width: 270px;
-  height: 40px;
+  min-height: 40px;
   justify-content: center;
   align-items: center;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+
+  padding: 0;
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 .about-us-button:active {
@@ -1396,14 +1417,24 @@ body {
 
 .contacts-button {
   display: flex;
+  flex-direction: column;
   width: 270px;
-  height: 40px;
+  min-height: 40px;
   justify-content: center;
   align-items: center;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+
+  padding: 0;
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
 }
 
 .contacts-button:active {
@@ -1418,6 +1449,7 @@ body {
 /* Рассылка */
 .subscribe {
   background-color: #f0f0f0;
+  min-height: 27vh;
 }
 
 .subscribe-container {
@@ -2366,10 +2398,11 @@ body {
 .button-filter {
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 220px;
-  height: 40px;
+  min-height: 40px;
   font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
