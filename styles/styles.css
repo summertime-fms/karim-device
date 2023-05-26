@@ -28,6 +28,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 1440px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -1482,11 +1483,12 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1158px;
-  height: 57px;
+  min-height: 57px;
 }
 
 .subscribe-form {
   display: flex;
+  min-height: 57px;
 }
 
 .subscribe-field {
@@ -1512,8 +1514,10 @@ body {
 }
 
 .subscribe-button {
-  display: inline-block;
-  padding: 18px 39px;
+  display: block;
+  padding: 0;
+  width: 253px;
+  min-height: 57px;
   letter-spacing: 2.5px;
   border: 3px solid #c4c4c4;
   text-align: center;
@@ -2114,7 +2118,7 @@ body {
 /* Заголовок страницы каталога */
 .inner-header-title {
   margin-top: 35px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 /* Хлебные крошки */
@@ -2123,6 +2127,7 @@ body {
   margin-bottom: 34px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   font-family: "rubik", sans-serif;
   font-weight: 400;
@@ -2130,25 +2135,24 @@ body {
 }
 
 .breadcrumbs-item {
+  margin-top: 10px;
   margin-right: 34px;
   position: relative;
-}
-
-.breadcrumbs-item:first-child .breadcrumbs-arrow {
-  position: absolute;
-  top: 7px;
-  left: 78px;
-}
-
-.breadcrumbs-item:nth-child(2) .breadcrumbs-arrow {
-  position: absolute;
-  top: 7px;
-  left: 143px;
 }
 
 .breadcrumbs-link {
   text-decoration: none;
   color: #000000;
+}
+
+.breadcrumbs-arrow {
+  position: absolute;
+  top: 7px;
+  right: -19px;
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-arrow {
+  display: none;
 }
 
 .breadcrumbs-link:hover {
