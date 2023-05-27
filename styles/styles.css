@@ -62,6 +62,7 @@ body {
   margin-top: 40px;
   background-color: #ffe17f;
   color: #000000;
+  min-height: 186px;
 }
 
 .main-header {
@@ -524,7 +525,7 @@ body {
 .toggler-link {
   display: block;
   width: 293px;
-  height: 50px;
+  min-height: 50px;
   text-decoration: none;
   position: relative;
 }
@@ -1795,7 +1796,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  display: flex;
 }
 
 .modal {
@@ -1807,7 +1808,7 @@ body {
 
 .modal-delivery {
   width: 920px;
-  height: 568px;
+  min-height: 568px;
   border: 10px solid #000000;
   padding: 72px 80px;
 }
@@ -1891,34 +1892,47 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.modal-wrapper-inputs .field-group:first-child .modal-input {
+.modal-input:hover {
+  background-color: rgba(220, 220, 220, 1);
+}
+
+.modal-input:focus-within {
+  background-color: rgba(235, 235, 235, 1);
+}
+
+.modal-input:focus-visible {
+  background-color: rgba(240, 240, 240, 1);
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.modal-input:disabled {
+  opacity: 0.3;
+}
+
+.modal-wrapper-inputs:first-child .modal-input {
   background-image: url("../images/vector-head.svg");
   background-repeat: no-repeat;
   background-position: right 21px center;
 }
 
-.modal-wrapper-inputs .field-group:last-child .modal-input {
+.field-group:last-child .modal-input {
   background-color: #ebebeb;
   background-image: url("../images/message-icon.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
 
-.modal-wrapper-inputs .field-group:last-child .modal-input:placeholder-shown {
+.field-group:last-child .modal-input:placeholder-shown {
   background-color: #f0f0f0;
 }
 
-.modal-wrapper-inputs .field-group:last-child .modal-input:hover {
+.field-group:last-child .modal-input:hover {
   background-color: #dcdcdc;
 }
 
-.modal-wrapper-inputs .field-group:last-child .modal-input:focus-visible {
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-}
-
-.modal-wrapper-inputs .field-group:last-child .modal-input:invalid {
+.field-group:last-child .modal-input:invalid {
   border: 2px solid #ff3d3d;
+  background-color: rgba(240, 240, 240, 1);
 }
 
 .modal-text-name {
@@ -1947,8 +1961,6 @@ body {
 .modal-wrapper-import .modal-input {
   width: 540px;
   height: 60px;
-  box-sizing: border-box;
-  padding: 20px;
 }
 
 .amount-group {
@@ -2024,18 +2036,28 @@ body {
 
 .amount-button {
   position: relative;
+  background-color: rgba(240, 240, 240, 1);
   width: 60px;
   height: 60px;
   border: none;
   cursor: pointer;
+  padding: 0;
+}
+
+.amount-button:hover {
+  background-color: rgba(235, 235, 235, 1);
 }
 
 .amount-button:hover svg {
   opacity: 60%;
 }
 
+.amount-button:active {
+  background-color: #ffffff;
+}
+
 .amount-button:active svg {
-  opacity: 60%;
+  opacity: 30%;
 }
 
 .amount-button:focus-visible {
@@ -2043,7 +2065,7 @@ body {
 }
 
 .amount-button:disabled {
-  opacity: 30%;
+  opacity: 10%;
 }
 
 .amount-input {
@@ -2066,17 +2088,23 @@ body {
   margin: 0;
 }
 
-/* .amount-input:focus-visible {
-  border: 2px solid #af4fff;
-} */
+.amount-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.amount-input:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: -2px;
+}
 
 .modal-button-submit {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   width: 200px;
-  height: 40px;
+  min-height: 40px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -2547,7 +2575,7 @@ body {
   display: grid;
   position: relative;
   grid-template-rows: 380px min-content;
-  grid-template-columns: 246px 114px;
+  grid-template-columns: 209px 151px;
   row-gap: 32px;
   width: 360px;
   min-height: 452px;
@@ -2632,6 +2660,7 @@ body {
   grid-row: 2 / 3;
   font-family: "rubik", sans-serif;
   font-weight: 700;
+  font-size: inherit;
   letter-spacing: -1px;
   color: #000000;
   opacity: 1;
@@ -2674,8 +2703,9 @@ body {
 .product-show-more {
   margin-bottom: 44px;
   display: flex;
+  flex-direction: column;
   width: 760px;
-  height: 55px;
+  min-height: 55px;
   justify-content: center;
   align-items: center;
   border: 3px solid #e5e5e5;
