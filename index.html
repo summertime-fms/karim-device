@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
-    <!-- <meta name="viewport" content="width=100vw, initial-scale=1" /> -->
     <title>Главная страница</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" href="favicon.ico" />
@@ -24,7 +23,7 @@
           <div class="first-menu-container">
             <form
               class="form-menu"
-              active="https://echo.htmlacademy.ru/"
+              action="https://echo.htmlacademy.ru/"
               method="post"
               autocomplete="off"
             >
@@ -33,6 +32,7 @@
                 type="search"
                 placeholder="Поиск по сайту"
                 name="search-menu"
+                required
               />
               <button class="search-button" type="submit">Найти</button>
             </form>
@@ -268,7 +268,7 @@
               <button class="slider-button slider-prev" type="button">
                 <span class="visually-hidden">Предыдущее фото</span>
               </button>
-              <button class="slider-button slider-next">
+              <button class="slider-button slider-next" type="button">
                 <span class="visually-hidden">Следуюшее фото</span>
               </button>
             </div>
@@ -649,7 +649,6 @@
       <!-- О нас -->
       <div class="container information-container">
         <section class="about-us">
-          <div class="black-line"></div>
           <h2 class="about-us-title">О нас</h2>
           <p class="about-us-text">
             Огромный выбор гаджетов не оставит равнодушным<br />
@@ -672,7 +671,6 @@
 
         <!-- Контакты -->
         <section class="contacts">
-          <div class="black-line"></div>
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">
             Вы можете забрать товар сами, заехав в наш офис. <br />
@@ -795,9 +793,8 @@
               реки Карповки, 5, литера П.
             </p>
           </address>
-
-          <div class="yellow-stick"></div>
         </section>
+
         <!-- Меню подвала -->
         <section class="footer-menu">
           <h2 class="visually-hidden">Меню</h2>
@@ -985,6 +982,7 @@
                 id="your-name"
                 name="name"
                 placeholder="Введите имя"
+                required
               />
               <span class="modal-text-name">Добавьте имя</span>
             </p>
@@ -997,6 +995,7 @@
                 name="e-mail"
                 placeholder="Введите e-mail"
                 value="почта"
+                required
               />
               <span class="modal-text-mail">Забавный у вас адрес</span>
             </p>
@@ -1012,6 +1011,7 @@
                 id="import"
                 name="import"
                 placeholder="В свободной форме"
+                required
               />
             </p>
             <div class="amount-group">
@@ -1078,6 +1078,7 @@
                   id="amount"
                   name="amount"
                   value="1"
+                  required
                 />
                 <button class="amount-button amount-button-add" type="button">
                   <span class="visually-hidden">добавить</span>

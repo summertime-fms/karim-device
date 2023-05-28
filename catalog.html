@@ -2,7 +2,6 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=100%, initial-scale=1" /> -->
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" href="favicon.ico" />
@@ -24,7 +23,7 @@
           <div class="first-menu-container">
             <form
               class="form-menu"
-              active="https://echo.htmlacademy.ru/"
+              action="https://echo.htmlacademy.ru/"
               method="post"
               autocomplete="off"
             >
@@ -34,6 +33,7 @@
                 placeholder="Поиск по сайту"
                 name="search-menu"
                 autocomplete="off"
+                required
               />
               <button class="search-button" type="submit">Найти</button>
             </form>
@@ -99,10 +99,93 @@
                     />
                   </svg>
                   <span>Корзина</span>
+                  <div class="popover popover-cart popover-open">
+                    <svg
+                      class="popover-arrow"
+                      width="14"
+                      height="7"
+                      viewBox="0 0 14 7"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14 6.16675H0L7 0.166748L14 6.16675Z"
+                        fill="black"
+                      />
+                    </svg>
+                    <div class="popover-content">
+                      <ul class="cart-items-list">
+                        <li class="cart-item">
+                          <a class="cart-link" href="#">
+                            <img
+                              class="cart-image"
+                              src="images/product/product-1.png"
+                              width="39"
+                              height="42"
+                              alt="1 товар"
+                            />
+                            <p class="cart-item-text">
+                              Любительская селфи-палка
+                            </p>
+                          </a>
+                          <button class="cart-button-close" type="button">
+                            <svg
+                              width="10"
+                              height="10"
+                              viewBox="0 0 10 11"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="cart-item">
+                          <a class="cart-link" href="#">
+                            <img
+                              class="cart-image"
+                              src="images/product/product-2.png"
+                              width="39"
+                              height="42"
+                              alt="2 товар"
+                            />
+                            <p class="cart-item-text">
+                              Профессиональная селфи-палка
+                            </p>
+                          </a>
+                          <button class="cart-button-close" type="button">
+                            <svg
+                              width="10"
+                              height="10"
+                              viewBox="0 0 10 11"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                                fill="white"
+                              />
+                            </svg>
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="popover-result">
+                        <span class="popover-product">Товаров: 2</span>
+                        <span class="popover-price">Сумма: 2000 ₽</span>
+                      </div>
+                      <div class="open-basket">
+                        <a class="popover-button" href="#">Открыть корзину</a>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </li>
             </ul>
           </div>
+
           <!-- посмотреть еще товары -->
           <div class="second-menu-container">
             <ul class="toggler-list">
@@ -385,6 +468,7 @@
                         class="control-input control-input-bluetooth"
                         type="radio"
                         name="bluetooth"
+                        value="Есть"
                         checked
                       />
                       <span class="control-switch"></span>
@@ -397,6 +481,7 @@
                         class="control-input control-input-bluetooth"
                         type="radio"
                         name="bluetooth"
+                        value="Нет"
                       />
                       <span class="control-switch"></span>
                       <span class="control-label">Нет</span>
@@ -457,7 +542,7 @@
                   <a class="product-link" href="#">
                     <img
                       class="product-image"
-                      src="images/product/product-1.png"
+                      src="images/product/product-1.jpg"
                       width="360"
                       height="380"
                       alt="Любительская селфи-палка"
@@ -481,7 +566,7 @@
                   <a class="product-link" href="#">
                     <img
                       class="product-image"
-                      src="images/product/product-2.png"
+                      src="images/product/product-2.jpg"
                       width="360"
                       height="380"
                       alt="Профессиональная селфи-палка"
@@ -502,7 +587,7 @@
                   <a class="product-link" href="#">
                     <img
                       class="product-image"
-                      src="images/product/product-3.png"
+                      src="images/product/product-3.jpg"
                       width="360"
                       height="380"
                       alt="Непотопляемая селфи-палка"
@@ -526,7 +611,7 @@
                   <a class="product-link" href="#">
                     <img
                       class="product-image"
-                      src="images/product/product-4.png"
+                      src="images/product/product-4.jpg"
                       width="360"
                       height="380"
                       alt="Селфи-палка «Следуй за мной»"
