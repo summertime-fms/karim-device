@@ -24,6 +24,7 @@
               alt="Логотип device"
             />
           </a>
+
           <!-- Поиск в меню -->
           <div class="first-menu-container">
             <form
@@ -37,11 +38,11 @@
                 type="search"
                 placeholder="Поиск по сайту"
                 name="search-menu"
-                autocomplete="off"
                 required
               />
               <button class="search-button" type="submit">Найти</button>
             </form>
+
             <!-- Войти -->
             <ul class="sign-in-list">
               <li class="sign-in-item">
@@ -60,13 +61,14 @@
                       fill="black"
                     />
                   </svg>
-                  <span>Коля Петухов</span>
+                  <span>Войти</span>
                 </a>
               </li>
               <li class="sign-in-item">
-                <a class="sign-in-link" href="#">Выйти</a>
+                <a class="sign-in-link" href="#"> </a>
               </li>
             </ul>
+
             <!-- Пользовательское меню -->
             <ul class="user-menu-list">
               <li class="user-menu-item">
@@ -104,92 +106,94 @@
                     />
                   </svg>
                   <span class="user-menu-word">Корзина</span>
-                  <div class="popover popover-cart popover-open">
-                    <svg
-                      class="popover-arrow"
-                      width="14"
-                      height="7"
-                      viewBox="0 0 14 7"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-label="стрелка поповера"
-                    >
-                      <path
-                        d="M14 6.16675H0L7 0.166748L14 6.16675Z"
-                        fill="black"
-                      />
-                    </svg>
-                    <div class="popover-content">
-                      <ul class="cart-items-list">
-                        <li class="cart-item">
-                          <a class="cart-link" href="#">
-                            <img
-                              class="cart-image"
-                              src="images/product/product-1.jpg"
-                              width="39"
-                              height="42"
-                              alt="1 товар"
+                </a>
+
+                <!-- Поповер корзины -->
+                <div class="popover popover-cart popover-open">
+                  <svg
+                    class="popover-arrow"
+                    width="14"
+                    height="7"
+                    viewBox="0 0 14 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="стрелка поповера"
+                  >
+                    <path
+                      d="M14 6.16675H0L7 0.166748L14 6.16675Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <div class="popover-content">
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <a class="cart-link" href="#">
+                          <img
+                            class="cart-image"
+                            src="images/product/product-1.jpg"
+                            width="39"
+                            height="42"
+                            alt="1 товар"
+                          />
+                          <h2 class="cart-item-text">
+                            Любительская селфи-палка
+                          </h2>
+                        </a>
+                        <button class="cart-button-close" type="button">
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-label="убрать товар"
+                          >
+                            <path
+                              d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                              fill="white"
                             />
-                            <h2 class="cart-item-text">
-                              Любительская селфи-палка
-                            </h2>
-                          </a>
-                          <button class="cart-button-close" type="button">
-                            <svg
-                              width="10"
-                              height="10"
-                              viewBox="0 0 10 11"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                              aria-label="убрать товар"
-                            >
-                              <path
-                                d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
-                                fill="white"
-                              />
-                            </svg>
-                          </button>
-                        </li>
-                        <li class="cart-item">
-                          <a class="cart-link" href="#">
-                            <img
-                              class="cart-image"
-                              src="images/product/product-2.jpg"
-                              width="39"
-                              height="42"
-                              alt="2 товар"
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <a class="cart-link" href="#">
+                          <img
+                            class="cart-image"
+                            src="images/product/product-2.jpg"
+                            width="39"
+                            height="42"
+                            alt="2 товар"
+                          />
+                          <h2 class="cart-item-text">
+                            Профессиональная селфи-палка
+                          </h2>
+                        </a>
+                        <button class="cart-button-close" type="button">
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-label="убрать товар"
+                          >
+                            <path
+                              d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                              fill="white"
                             />
-                            <h2 class="cart-item-text">
-                              Профессиональная селфи-палка
-                            </h2>
-                          </a>
-                          <button class="cart-button-close" type="button">
-                            <svg
-                              width="10"
-                              height="10"
-                              viewBox="0 0 10 11"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                              aria-label="убрать товар"
-                            >
-                              <path
-                                d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
-                                fill="white"
-                              />
-                            </svg>
-                          </button>
-                        </li>
-                      </ul>
-                      <div class="popover-result">
-                        <span class="popover-product">Товаров: 2</span>
-                        <span class="popover-price">Сумма: 2000 ₽</span>
-                      </div>
-                      <div class="open-basket">
-                        <a class="popover-button" href="#">Открыть корзину</a>
-                      </div>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="popover-result">
+                      <span class="popover-product">Товаров: 2</span>
+                      <span class="popover-price">Сумма: 2000 ₽</span>
+                    </div>
+                    <div class="open-basket">
+                      <a class="popover-button" href="#">Открыть корзину</a>
                     </div>
                   </div>
-                </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -212,6 +216,7 @@
                     <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
                   </svg>
                 </a>
+                <!-- подменю -->
                 <div class="submenu-wrapper">
                   <ul class="submenu-list">
                     <li class="submenu-item">
