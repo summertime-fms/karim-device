@@ -251,6 +251,10 @@ body {
   margin-left: 36px;
 }
 
+.user-menu-item:nth-child(2) {
+  position: relative;
+}
+
 .user-menu-item:nth-child(1n) {
   margin-left: 0;
 }
@@ -272,11 +276,11 @@ body {
   position: relative;
 }
 
-.user-menu-item:nth-child(1n) span {
+.user-menu-item:nth-child(1n) .user-menu-word {
   padding-left: 22px;
 }
 
-.user-menu-item:nth-child(2n) span {
+.user-menu-item:nth-child(2n) .user-menu-word {
   padding-left: 25px;
 }
 
@@ -293,7 +297,7 @@ body {
   outline-offset: 4px;
 }
 
-.user-menu-item:nth-child(2) span::before {
+.user-menu-item:nth-child(2) .user-menu-word::before {
   content: "2";
   display: flex;
   justify-content: center;
@@ -452,6 +456,10 @@ body {
   grid-column-start: 1;
   grid-column-end: 2;
   align-self: center;
+}
+
+.popover-product {
+  padding-left: 0;
 }
 
 .popover-price {
@@ -1028,9 +1036,21 @@ body {
   position: relative;
   bottom: 47px;
 
-  background-image: url("../images/stickman.svg");
+  background-image: url("../images/advantages/advantages-1.svg");
   background-repeat: no-repeat;
   background-position: 95% 22px;
+}
+
+.advantages-container-2 {
+  background-image: url("../images/advantages/advantages-2.svg");
+  background-repeat: no-repeat;
+  background-position: 961px 7px;
+}
+
+.advantages-container-3 {
+  background-image: url("../images/advantages/advantages-3.svg");
+  background-repeat: no-repeat;
+  background-position: 976px 11px;
 }
 
 .advantages-list {
@@ -1097,6 +1117,27 @@ body {
   background-color: #000000;
 }
 
+.advantages-button-1 {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  min-height: 40px;
+  font-family: "raleway", sans-serif;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: transparent;
+}
+
 .advantages-button-2 {
   padding: 0;
   display: flex;
@@ -1158,7 +1199,7 @@ body {
 .advantages-description {
   width: 568px;
   position: relative;
-  bottom: -17px;
+  bottom: -18px;
 }
 
 .advantages-title {
@@ -1177,6 +1218,7 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+  min-width: 540px;
 }
 
 /* Редкий товар под заказ */
@@ -1978,7 +2020,7 @@ body {
 }
 
 .modal-wrapper-import .modal-input {
-  width: 540px;
+  width: 520px;
   height: 60px;
 }
 
@@ -1988,17 +2030,25 @@ body {
   justify-content: space-between;
 }
 
+.amount-info {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
 .amount-container {
   display: flex;
 }
 
 .amount-control {
   display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .amount-symbol {
   display: block;
+  padding: 0;
   background-color: #ffe17f;
   width: 26px;
   height: 26px;
@@ -2007,6 +2057,11 @@ body {
   position: relative;
   top: -3px;
   cursor: pointer;
+  border: none;
+}
+
+.amount-symbol:focus-visible {
+  outline: none;
 }
 
 .amount-symbol svg {
@@ -2015,6 +2070,7 @@ body {
   left: 12px;
 }
 
+/* поповер описание в кол-ве */
 .amount-note {
   display: none;
 }
@@ -2030,7 +2086,7 @@ body {
 .note-arrow {
   position: absolute;
   bottom: -10px;
-  right: 40px;
+  right: 41px;
   display: block;
   z-index: 6;
 }

@@ -86,7 +86,7 @@
                     <path d="M2 4H0V12H2V4Z" fill="black" />
                     <path d="M10 3H8V12H10V3Z" fill="black" />
                   </svg>
-                  <span>Сравнить</span>
+                  <span class="user-menu-word">Сравнить</span>
                 </a>
               </li>
               <li class="user-menu-item">
@@ -105,7 +105,7 @@
                       fill="black"
                     />
                   </svg>
-                  <span>Корзина</span>
+                  <span class="user-menu-word">Корзина</span>
                 </a>
 
                 <!-- Поповер корзины -->
@@ -130,12 +130,14 @@
                         <a class="cart-link" href="#">
                           <img
                             class="cart-image"
-                            src="images/product/product-1.png"
+                            src="images/product/product-1.jpg"
                             width="39"
                             height="42"
                             alt="1 товар"
                           />
-                          <p class="cart-item-text">Любительская селфи-палка</p>
+                          <h2 class="cart-item-text">
+                            Любительская селфи-палка
+                          </h2>
                         </a>
                         <button class="cart-button-close" type="button">
                           <svg
@@ -157,14 +159,14 @@
                         <a class="cart-link" href="#">
                           <img
                             class="cart-image"
-                            src="images/product/product-2.png"
+                            src="images/product/product-2.jpg"
                             width="39"
                             height="42"
                             alt="2 товар"
                           />
-                          <p class="cart-item-text">
+                          <h2 class="cart-item-text">
                             Профессиональная селфи-палка
-                          </p>
+                          </h2>
                         </a>
                         <button class="cart-button-close" type="button">
                           <svg
@@ -275,7 +277,7 @@
           <div class="gallery-image">
             <img
               class="slider-image"
-              src="images/quadrocopter.png"
+              src="images/slider/slider-1.png"
               width="560"
               height="560"
               alt="Квадрокоптер"
@@ -568,13 +570,10 @@
 
       <!-- Секция преимущества -->
       <section class="advantages">
-        <div class="container advantages-container">
+        <div class="container advantages-container advantages-container-1">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <button
-                class="advantages-button-1 advantages-button-current"
-                type="button"
-              >
+              <button class="advantages-button-current" type="button">
                 <span>Доставка</span>
               </button>
             </li>
@@ -602,6 +601,80 @@
               Мы с удовольствием доставим ваш товар прямо <br />
               к вашему подъезду совершенно бесплатно! Ведь <br />
               мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages visually-hidden">
+        <div class="container advantages-container advantages-container-2">
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <button
+                class="advantages-button-1 button--animated"
+                type="button"
+              >
+                <span>Доставка</span>
+              </button>
+            </li>
+            <li class="advantages-item">
+              <button class="advantages-button-current" type="button">
+                <span>Гарантия</span>
+              </button>
+            </li>
+            <li class="advantages-item">
+              <button
+                class="advantages-button-3 button--animated"
+                type="button"
+              >
+                <span>Кредит</span>
+              </button>
+            </li>
+          </ul>
+          <div class="vertical-line"></div>
+          <div class="advantages-description">
+            <h2 class="advantages-title">Гарантия</h2>
+            <p class="advantages-text">
+              Если из-за возгорания купленного у нас товара у вас<br />
+              сгорит дом — не переживайте, мы выдадим вам новый.<br />
+              Товар, не дом, конечно же.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages visually-hidden">
+        <div class="container advantages-container advantages-container-3">
+          <ul class="advantages-list">
+            <li class="advantages-item">
+              <button
+                class="advantages-button-1 button--animated"
+                type="button"
+              >
+                <span>Доставка</span>
+              </button>
+            </li>
+            <li class="advantages-item">
+              <button
+                class="advantages-button-2 button--animated"
+                type="button"
+              >
+                <span>Гарантия</span>
+              </button>
+            </li>
+            <li class="advantages-item">
+              <button class="advantages-button-current" type="button">
+                <span>Кредит</span>
+              </button>
+            </li>
+          </ul>
+          <div class="vertical-line"></div>
+          <div class="advantages-description">
+            <h2 class="advantages-title">Кредит</h2>
+            <p class="advantages-text">
+              Залезть в долговую яму стало проще! Кредитные<br />
+              консультанты подберут для вас наиболее выгодные<br />
+              условия кредита. Выгодные для банка, разумеется.
             </p>
           </div>
         </div>
@@ -1040,9 +1113,10 @@
               />
             </p>
             <div class="amount-group">
-              <label class="amount-control" for="amount"
-                >Количество:
-                <a class="amount-symbol">
+              <div class="amount-info">
+                <label class="amount-control" for="amount">Количество:</label>
+                <!-- знак информации -->
+                <button class="amount-symbol" type="button">
                   <svg
                     width="2"
                     height="12"
@@ -1055,14 +1129,11 @@
                       <path d="M2 0H0V2H2V0Z" fill="black" />
                       <path d="M2 4H0V12H2V4Z" fill="black" />
                     </g>
-                    <defs>
-                      <clipPath id="clip0_11365_564">
-                        <rect width="2" height="12" fill="white" />
-                      </clipPath>
-                    </defs>
                   </svg>
-                </a>
-                <a class="amount-note" href="#">
+                </button>
+
+                <!-- поповер описание в кол-ве -->
+                <div class="amount-note">
                   <svg
                     class="note-arrow"
                     width="14"
@@ -1081,8 +1152,9 @@
                     Постараемся найти, сколько нужно. Привезём сколько получится
                     по требованиям к провозу багажа.
                   </div>
-                </a>
-              </label>
+                </div>
+              </div>
+
               <div class="amount-container">
                 <button
                   class="amount-button amount-button-put-away"
@@ -1103,9 +1175,9 @@
                 <input
                   class="amount-input"
                   type="number"
-                  id="amount"
                   name="amount"
                   value="1"
+                  id="amount"
                   required
                 />
                 <button class="amount-button amount-button-add" type="button">
