@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -19,18 +24,25 @@
               alt="Логотип device"
             />
           </a>
+
           <!-- Поиск в меню -->
           <div class="first-menu-container">
-            <form class="form-menu">
+            <form
+              class="form-menu"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+              autocomplete="off"
+            >
               <input
                 class="search-menu"
                 type="search"
                 placeholder="Поиск по сайту"
                 name="search-menu"
-                autocomplete="off"
+                required
               />
               <button class="search-button" type="submit">Найти</button>
             </form>
+
             <!-- Войти -->
             <ul class="sign-in-list">
               <li class="sign-in-item">
@@ -49,13 +61,14 @@
                       fill="black"
                     />
                   </svg>
-                  <span>Коля Петухов</span>
+                  <span>Войти</span>
                 </a>
               </li>
               <li class="sign-in-item">
-                <a class="sign-in-link" href="#">Выйти</a>
+                <a class="sign-in-link" href="#"> </a>
               </li>
             </ul>
+
             <!-- Пользовательское меню -->
             <ul class="user-menu-list">
               <li class="user-menu-item">
@@ -73,7 +86,7 @@
                     <path d="M2 4H0V12H2V4Z" fill="black" />
                     <path d="M10 3H8V12H10V3Z" fill="black" />
                   </svg>
-                  <span>Сравнить</span>
+                  <span class="user-menu-word">Сравнить</span>
                 </a>
               </li>
               <li class="user-menu-item">
@@ -92,26 +105,151 @@
                       fill="black"
                     />
                   </svg>
-                  <span>Корзина</span>
+                  <span class="user-menu-word">Корзина</span>
                 </a>
+
+                <!-- Поповер корзины -->
+                <div class="popover popover-cart popover-open">
+                  <svg
+                    class="popover-arrow"
+                    width="14"
+                    height="7"
+                    viewBox="0 0 14 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="стрелка поповера"
+                  >
+                    <path
+                      d="M14 6.16675H0L7 0.166748L14 6.16675Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <div class="popover-content">
+                    <ul class="cart-items-list">
+                      <li class="cart-item">
+                        <a class="cart-link" href="#">
+                          <img
+                            class="cart-image"
+                            src="images/product/product-1.jpg"
+                            width="39"
+                            height="42"
+                            alt="1 товар"
+                          />
+                          <h2 class="cart-item-text">
+                            Любительская селфи-палка
+                          </h2>
+                        </a>
+                        <button class="cart-button-close" type="button">
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-label="убрать товар"
+                          >
+                            <path
+                              d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </li>
+                      <li class="cart-item">
+                        <a class="cart-link" href="#">
+                          <img
+                            class="cart-image"
+                            src="images/product/product-2.jpg"
+                            width="39"
+                            height="42"
+                            alt="2 товар"
+                          />
+                          <h2 class="cart-item-text">
+                            Профессиональная селфи-палка
+                          </h2>
+                        </a>
+                        <button class="cart-button-close" type="button">
+                          <svg
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 11"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-label="убрать товар"
+                          >
+                            <path
+                              d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="popover-result">
+                      <span class="popover-product">Товаров: 2</span>
+                      <span class="popover-price">Сумма: 2000 ₽</span>
+                    </div>
+                    <div class="open-basket">
+                      <a class="popover-button" href="#">Открыть корзину</a>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
+
           <!-- посмотреть еще товары -->
           <div class="second-menu-container">
-            <a class="toggler-link" href="#">
-              <span class="toggler-name">Каталог товаров</span>
-              <svg
-                class="toggler-icon"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
-              </svg>
-            </a>
+            <ul class="toggler-list">
+              <li class="toggler-item">
+                <a class="toggler-link" href="#">
+                  <span class="toggler-name">Каталог товаров</span>
+                  <svg
+                    class="toggler-icon"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="посмотреть каталог товаров"
+                  >
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black" />
+                  </svg>
+                </a>
+                <!-- подменю -->
+                <div class="submenu-wrapper">
+                  <ul class="submenu-list">
+                    <li class="submenu-item">
+                      <a class="submenu-link" href="#"
+                        >Виртуальная реальность</a
+                      >
+                    </li>
+                    <li class="submenu-item">
+                      <a class="submenu-link" href="catalog.html">
+                        Моноподы для селфи
+                      </a>
+                    </li>
+                    <li class="submenu-item">
+                      <a class="submenu-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="submenu-list">
+                    <li class="submenu-item">
+                      <a class="submenu-link" href="#"> Фитнес-браслеты </a>
+                    </li>
+                    <li class="submenu-item">
+                      <a class="submenu-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="submenu-list">
+                    <li class="submenu-item">
+                      <a class="submenu-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
             <!-- Меню навигации -->
             <ul class="navigation-menu">
               <li class="navigation-item">
@@ -134,6 +272,7 @@
       <!-- Каталог моноподы для селфи -->
       <header class="inner-header">
         <div class="container">
+          <!-- Хлебные крошки -->
           <h1 class="inner-header-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -145,6 +284,7 @@
                 viewBox="0 0 4 8"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-label="стрелка на находящийся странице"
               >
                 <g opacity="0.2" clip-path="url(#clip0_42087_364)">
                   <path
@@ -173,6 +313,7 @@
                 viewBox="0 0 4 8"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-label="стрелка на находящийся странице"
               >
                 <g opacity="0.2" clip-path="url(#clip0_42087_364)">
                   <path
@@ -194,6 +335,32 @@
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
+              <svg
+                class="breadcrumbs-arrow"
+                width="4"
+                height="8"
+                viewBox="0 0 4 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-label="стрелка на находящийся странице"
+              >
+                <g opacity="0.2" clip-path="url(#clip0_42087_364)">
+                  <path
+                    d="M3.79999 3.59995L0.799994 0.599951C0.599994 0.399951 0.299994 0.399951 0.0999939 0.599951C-6.10203e-06 0.799951 -6.10203e-06 1.19995 0.0999939 1.39995L2.69999 3.99995L0.0999939 6.59995C-6.10203e-06 6.79995 -6.10203e-06 7.09995 0.0999939 7.29995C0.199994 7.39995 0.399994 7.49995 0.499994 7.49995C0.599994 7.49995 0.799994 7.39995 0.899994 7.39995L3.89999 4.39995C3.89999 4.29995 3.99999 4.09995 3.99999 3.99995C3.99999 3.89995 3.89999 3.69995 3.79999 3.59995Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_42087_364">
+                    <rect
+                      width="4"
+                      height="7"
+                      fill="white"
+                      transform="translate(0 0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
             </li>
           </ul>
         </div>
@@ -318,6 +485,7 @@
                         class="control-input control-input-bluetooth"
                         type="radio"
                         name="bluetooth"
+                        value="Есть"
                         checked
                       />
                       <span class="control-switch"></span>
@@ -330,6 +498,7 @@
                         class="control-input control-input-bluetooth"
                         type="radio"
                         name="bluetooth"
+                        value="Нет"
                       />
                       <span class="control-switch"></span>
                       <span class="control-label">Нет</span>
@@ -338,7 +507,7 @@
                 </ul>
               </fieldset>
               <button class="button-filter button--animated" type="submit">
-                Показать
+                <span>Показать</span>
               </button>
             </form>
           </div>
@@ -364,6 +533,7 @@
                     viewBox="0 0 12 10"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-label="назад"
                   >
                     <path d="M6 0L11.5 10H0.5" fill="black" />
                   </svg>
@@ -376,6 +546,7 @@
                     viewBox="0 0 12 10"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    aria-label="вперед"
                   >
                     <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
                   </svg>
@@ -390,19 +561,22 @@
                   <a class="product-link" href="#">
                     <img
                       class="product-image"
-                      src="images/product/product-1.png"
+                      src="images/product/product-1.jpg"
                       width="360"
                       height="380"
                       alt="Любительская селфи-палка"
                       decoding="async"
                     />
                     <div class="overlay--product">
-                      <button class="button-image-product button--animated">
+                      <span class="button-image-product button--animated">
                         Подробнее
-                      </button>
+                      </span>
                     </div>
 
-                    <h3 class="product-title">Любительская селфи-палка</h3>
+                    <h3 class="product-title">
+                      Любительская<br />
+                      селфи-палка
+                    </h3>
 
                     <span class="product-card-price">500 ₽</span>
                   </a>
@@ -411,16 +585,16 @@
                   <a class="product-link" href="#">
                     <img
                       class="product-image"
-                      src="images/product/product-2.png"
+                      src="images/product/product-2.jpg"
                       width="360"
                       height="380"
                       alt="Профессиональная селфи-палка"
                       decoding="async"
                     />
                     <div class="overlay--product">
-                      <button class="button-image-product button--animated">
+                      <span class="button-image-product button--animated">
                         Подробнее
-                      </button>
+                      </span>
                     </div>
 
                     <h3 class="product-title">Профессиональная селфи-палка</h3>
@@ -432,19 +606,22 @@
                   <a class="product-link" href="#">
                     <img
                       class="product-image"
-                      src="images/product/product-3.png"
+                      src="images/product/product-3.jpg"
                       width="360"
                       height="380"
                       alt="Непотопляемая селфи-палка"
                       decoding="async"
                     />
                     <div class="overlay--product">
-                      <button class="button-image-product button--animated">
+                      <span class="button-image-product button--animated">
                         Подробнее
-                      </button>
+                      </span>
                     </div>
 
-                    <h3 class="product-title">Непотопляемая селфи-палка</h3>
+                    <h3 class="product-title">
+                      Непотопляемая<br />
+                      селфи-палка
+                    </h3>
 
                     <span class="product-card-price">2 500 ₽</span>
                   </a>
@@ -453,16 +630,16 @@
                   <a class="product-link" href="#">
                     <img
                       class="product-image"
-                      src="images/product/product-4.png"
+                      src="images/product/product-4.jpg"
                       width="360"
                       height="380"
                       alt="Селфи-палка «Следуй за мной»"
                       decoding="async"
                     />
                     <div class="overlay--product">
-                      <button class="button-image-product button--animated">
+                      <span class="button-image-product button--animated">
                         Подробнее
-                      </button>
+                      </span>
                     </div>
 
                     <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
@@ -472,7 +649,7 @@
                 </li>
               </ul>
               <button class="button product-show-more" type="button">
-                Загрузить ещё
+                <span>Загрузить ещё</span>
               </button>
 
               <!-- Пагинация -->
@@ -651,6 +828,7 @@
               viewBox="0 0 115 33"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-label="Логотип html academy"
             >
               <path d="M0 12.9V15.5H2.5V12.9H0Z" fill="#FFC700" />
               <path
